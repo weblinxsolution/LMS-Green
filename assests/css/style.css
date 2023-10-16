@@ -151,7 +151,9 @@ img {
 .text-white {
     color: #FFF;
 }
-
+.text-green{
+    color: #3EB905;
+}
 .footer-bg {
     background-image: url("/assests/images/footer-background.svg");
     background-repeat: no-repeat;
@@ -175,17 +177,23 @@ img {
 .heart-red {
     width: 40px;
 }
+
 .banner {
     background-color: #FFF;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
     border-radius: 20px;
     position: relative;
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
+
 .small-kid {
     position: absolute;
     top: -20rem;
 }
-.small-kid img{
+
+.small-kid img {
     width: 600px;
+}
+.section-4{
+    padding-top: 10rem;
 }
