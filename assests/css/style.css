@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 49px;
     font-weight: 900;
     color: #091C00;
 }
@@ -18,7 +18,7 @@ h2 {
 
 p {
     font-size: 14px;
-    color: #091C00;
+    color: #5F5F5F;
 }
 
 a {
@@ -35,8 +35,29 @@ a:hover {
     color: #091C00;
 }
 
+ul li {
+    color: #091C00;
+
+}
+
 img {
     width: 100%;
+}
+
+.btn-arrow {
+    width: 20px;
+}
+
+.globle-btn button {
+    background-color: #4AD906;
+    border: none;
+    border-radius: 100px;
+    padding: .7rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(38, 50, 56, 0.20)
 }
 
 .wrapper {
@@ -44,9 +65,18 @@ img {
     margin: auto;
 }
 
+.gap-1 {
+    gap: .5rem;
+}
+
 .fs-16 {
     font-size: 16px;
     color: #091C00;
+}
+
+.semi-bold {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .logohere {
@@ -61,19 +91,101 @@ img {
     gap: 3rem;
 }
 
-.navbar-lms {
-    padding: 20px 0;
-    border-bottom: 1px solid #EBE7F4;
-}
-
 .addcart a img {
     width: 14px;
     margin-left: 10px;
 }
 
-.addcart a .myaccount-logo {
+.myaccount-logo {
     width: 22px;
 }
-.navbar-expand-lg{
+
+.myaccount-logo-1 {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.navbar-expand-lg {
     padding: 0;
+}
+
+.globle-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #EBE7F4;
+}
+
+.card-1 {
+    background-color: #FFF;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    height: 350px;
+}
+
+.card-1 img {
+    width: 50px;
+}
+
+
+
+.card-1 button {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+
+}
+
+.sapce-header {
+    gap: .5rem;
+}
+
+.section-2 {
+    margin-top: 4rem;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.footer-bg {
+    background-image: url("/assests/images/footer-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+}
+
+.footer-socials-icons {
+    width: 35px;
+    display: flex;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-bg p {
+    color: #FFF;
+}
+
+.heart-red {
+    width: 40px;
+}
+.banner {
+    background-color: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    position: relative;
+    padding: 2rem;
+}
+.small-kid {
+    position: absolute;
+    top: -20rem;
+}
+.small-kid img{
+    width: 600px;
 }
