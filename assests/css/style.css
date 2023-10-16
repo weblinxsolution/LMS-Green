@@ -1,0 +1,79 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 900;
+    color: #091C00;
+}
+
+h2 {
+    font-size: 36px;
+    color: #091C00;
+}
+
+p {
+    font-size: 14px;
+    color: #091C00;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #091C00;
+    font-size: 15px;
+    transition: .5s;
+}
+
+a:hover {
+    list-style: none;
+    text-decoration: none;
+    color: #091C00;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.fs-16 {
+    font-size: 16px;
+    color: #091C00;
+}
+
+.logohere {
+    width: 120px;
+}
+
+.gap-2 {
+    gap: 1.5rem;
+}
+
+.gap-4 {
+    gap: 3rem;
+}
+
+.navbar-lms {
+    padding: 20px 0;
+    border-bottom: 1px solid #EBE7F4;
+}
+
+.addcart a img {
+    width: 14px;
+    margin-left: 10px;
+}
+
+.addcart a .myaccount-logo {
+    width: 22px;
+}
+.navbar-expand-lg{
+    padding: 0;
+}
