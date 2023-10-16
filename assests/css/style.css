@@ -63,6 +63,8 @@ img {
 .wrapper {
     max-width: 1300px;
     margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .gap-1 {
@@ -205,4 +207,31 @@ img {
 }
 .rounded-pill input{
     padding-left: 1rem;
+}
+@media (max-width:999px) {
+    .mobile-res{
+        align-items: start !important;
+    }
+    .kid-home{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .kid-home img{
+        width: 500px;
+    }
+    .arrow-tck img{
+        width: 20px;
+        margin-left: .5rem;
+    }
+    .cards{
+        margin-bottom: 3rem;
+    }
+    .small-kid{
+        display: none;
+    }
+    .footer-bg{
+        background-color: #3EB905;
+        background-image: none;
+    }
 }
