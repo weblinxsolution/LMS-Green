@@ -24,7 +24,7 @@ p {
 a {
     list-style: none;
     text-decoration: none;
-    color: #091C00;
+    color: #091C00 !important;
     font-size: 15px;
     transition: .5s;
 }
@@ -188,7 +188,7 @@ img {
 
 .small-kid {
     position: absolute;
-    top: -20rem;
+    top: -8rem;
 }
 
 .small-kid img {
@@ -196,4 +196,13 @@ img {
 }
 .section-4{
     padding-top: 10rem;
+}
+.input-group-text{
+    background-color: #4AD906;
+    border: none;
+    color: #FFF;
+    padding: 1rem;
+}
+.rounded-pill input{
+    padding-left: 1rem;
 }
