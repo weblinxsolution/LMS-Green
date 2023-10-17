@@ -5,8 +5,13 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
 h1 {
-    font-size: 49px;
+    font-size: 40px;
     font-weight: 900;
     color: #091C00;
 }
@@ -14,6 +19,10 @@ h1 {
 h2 {
     font-size: 36px;
     color: #091C00;
+}
+
+h4 {
+    font-weight: 600;
 }
 
 p {
@@ -61,7 +70,7 @@ img {
 }
 
 .wrapper {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: auto;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -133,7 +142,11 @@ img {
     width: 50px;
 }
 
+h6 {
 
+    font-size: 16px;
+    font-weight: 700;
+}
 
 .card-1 button {
     border: none;
@@ -146,16 +159,39 @@ img {
     gap: .5rem;
 }
 
+.parent-div {
+    position: relative;
+    z-index: 1;
+}
+
+.background-green-trophy img {
+    width: 30%;
+    position: absolute;
+    top: -40%;
+    z-index: -1;
+}
+
+.sun-bg img {
+    width: 30%;
+    position: absolute;
+    top: -60%;
+    right: 0;
+    z-index: -1;
+}
+
 .section-2 {
     margin-top: 4rem;
+
 }
 
 .text-white {
     color: #FFF;
 }
-.text-green{
+
+.text-green {
     color: #3EB905;
 }
+
 .footer-bg {
     background-image: url("/assests/images/footer-background.svg");
     background-repeat: no-repeat;
@@ -196,42 +232,308 @@ img {
 .small-kid img {
     width: 600px;
 }
-.section-4{
+
+.section-4 {
     padding-top: 10rem;
 }
-.input-group-text{
+
+.input-group-text {
     background-color: #4AD906;
     border: none;
     color: #FFF;
     padding: 1rem;
 }
-.rounded-pill input{
+
+.rounded-pill input {
     padding-left: 1rem;
 }
+
+.on-before {
+    position: relative;
+}
+
+.on-before::before {
+    content: '';
+    width: 18px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #FF7F56;
+    position: absolute;
+    left: -1.8rem;
+    top: 5px;
+
+}
+
+.center-card-adjust {
+    height: 200px;
+}
+
+.center-card-bootom {
+    display: flex;
+    align-items: end;
+}
+
+.seventy-top {
+    position: relative;
+}
+
+.seventy-top::before {
+    background-image: url('../images/green-arrow-top.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -6rem;
+    content: '';
+}
+
+.fifty-bottom {
+    position: relative;
+}
+
+.fifty-bottom::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/green-arrow-bottom.svg');
+    background-repeat: no-repeat;
+    bottom: -3rem;
+    right: 10rem;
+}
+
+.right-girl {
+    position: absolute;
+    width: 650px;
+    top: 100px;
+    left: -100px;
+}
+
+.fs-21 {
+    font-size: 20px;
+}
+
+.boy-bottom {
+    position: absolute;
+    width: 650px;
+    right: 0;
+}
+
+.about-bg {
+    background-image: url("../images/about-sec-1-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5rem;
+
+}
+
+.home-bg {
+    background-image: url("../images/home-banner-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+}
+
+.about-button button {
+    background-color: transparent;
+    border: 1px solid #F4A259;
+    border-radius: 100px;
+    padding: 5px 22px;
+}
+
+.white-bg {
+    background-color: #FFF;
+    padding: 37px 42px 68px 42px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 300px;
+}
+
+.white-bg img {
+    width: 30%;
+}
+
+.above-red-line {
+    position: relative;
+}
+
+.above-red-line::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #F4A259;
+    border-radius: 100px;
+    top: -10px;
+
+}
+
+.text-grape {
+    color: #96BB7C;
+    font-weight: 600;
+}
+
+.slider-card {
+    background-color: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    padding: 2rem 2rem;
+}
+.profile-name p{
+    margin: 0;
+    margin-left: 10px;
+}
+.profile-pic img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.rating-star{
+    width: 100%;
+    justify-content: center;
+}
+.rating-star img{
+    width: 10%;
+}
+.center{
+    display: flex;
+    gap: 2rem;
+}
+.purple-icon-img img{
+    width: 11% !important;
+}
+.purple-icon-img{
+    gap: 1rem;
+}
+.socails-cards{
+    border-radius: 6px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    padding-bottom: 1rem;
+}
+.socails-cards img{
+    /* width: 250px; */
+    border-radius: 30px 30px 0 0;
+}
+.white-bg-profile{
+    background-color: #FFF;
+}
+.slick-prev:before, .slick-next:before{
+    color: #FF7F56 !important;
+}
+.suelist-button .slick-prev{
+    position: absolute !important;
+    top: 100%;
+    left: 48%;
+}
+.suelist-button .slick-next{
+    position: absolute !important;
+    top: 100%;
+    left: 50%;
+}
+.center-button .slick-prev{
+    position: absolute;
+    position: absolute;
+    top: 90%;
+    left: -5rem;
+}
+.center-button .slick-next{
+    position: absolute;
+    position: absolute;
+    left: -3rem;
+    top: 90%;
+}
 @media (max-width:999px) {
-    .mobile-res{
+
+    .home-bg {
+        background-size: contain;
+        padding-bottom: 2rem;
+    }
+
+    .right-girl {
+        position: unset;
+        width: 400px;
+        display: none;
+    }
+
+    .boy-bottom {
+        width: 400px;
+        position: unset;
+        display: none;
+    }
+
+    .mobile-res {
         align-items: start !important;
     }
-    .kid-home{
+
+    .kid-home {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .kid-home img{
+
+    .kid-home img {
         width: 500px;
     }
-    .arrow-tck img{
+
+    .arrow-tck img {
         width: 20px;
         margin-left: .5rem;
     }
-    .cards{
+
+    .cards {
         margin-bottom: 3rem;
     }
-    .small-kid{
+
+    .small-kid {
         display: none;
     }
-    .footer-bg{
+
+    .footer-bg {
         background-color: #3EB905;
         background-image: none;
+    }
+}
+
+@media (max-width:400px) {
+    .fs-9 {
+        font-size: 9px;
+    }
+
+    .heart-red {
+        width: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .background-green-trophy img {
+        width: 100%;
+        position: absolute;
+        top: -5%;
+        z-index: -1;
+    }
+
+    .sun-bg img {
+        width: 100%;
+        position: absolute;
+        top: -60%;
+        right: 0;
+        z-index: -1;
+    }
+
+    .seventy-top::before {
+        right: -7rem;
+    }
+
+    .fifty-bottom::before {
+        right: 5rem;
+    }
+
+    .kid-home img {
+        width: 250px !important;
     }
 }
