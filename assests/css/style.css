@@ -170,11 +170,27 @@ h6 {
     top: -40%;
     z-index: -1;
 }
+.background-green-trophy-2 img{
+    width: 30%;
+    position: absolute;
+    top: 120%;
+    z-index: -1;
+}
+.you-profile{
+    width: 100%;
+}
 
 .sun-bg img {
     width: 30%;
     position: absolute;
     top: -60%;
+    right: 0;
+    z-index: -1;
+}
+.sun-bg-1 img {
+    width: 30%;
+    position: absolute;
+    top: -200%;
     right: 0;
     z-index: -1;
 }
@@ -202,6 +218,8 @@ h6 {
 .footer-socials-icons {
     width: 35px;
     display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .footer-logo {
@@ -381,72 +399,178 @@ h6 {
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
     padding: 2rem 2rem;
 }
-.profile-name p{
+
+.profile-name p {
     margin: 0;
     margin-left: 10px;
 }
+
 .profile-pic img {
     width: 30px;
     height: 30px;
     border-radius: 100%;
 }
-.rating-star{
+
+.rating-star {
     width: 100%;
     justify-content: center;
 }
-.rating-star img{
+
+.rating-star img {
     width: 10%;
 }
-.center{
+
+.center {
     display: flex;
     gap: 2rem;
 }
-.purple-icon-img img{
+
+.purple-icon-img img {
     width: 11% !important;
 }
-.purple-icon-img{
+
+.purple-icon-img {
     gap: 1rem;
 }
-.socails-cards{
+
+.socails-cards {
     border-radius: 6px;
     background-color: #FFF;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
     padding-bottom: 1rem;
 }
-.socails-cards img{
+
+.socails-cards img {
     /* width: 250px; */
     border-radius: 30px 30px 0 0;
 }
-.white-bg-profile{
+
+.white-bg-profile {
     background-color: #FFF;
 }
-.slick-prev:before, .slick-next:before{
+
+.slick-prev:before,
+.slick-next:before {
     color: #FF7F56 !important;
 }
-.suelist-button .slick-prev{
+
+.suelist-button .slick-prev {
     position: absolute !important;
     top: 100%;
     left: 48%;
 }
-.suelist-button .slick-next{
+
+.suelist-button .slick-next {
     position: absolute !important;
     top: 100%;
     left: 50%;
 }
-.center-button .slick-prev{
-    position: absolute;
+
+.center-button .slick-prev {
     position: absolute;
     top: 90%;
     left: -5rem;
 }
-.center-button .slick-next{
+
+.center-button .slick-next {
     position: absolute;
     position: absolute;
     left: -3rem;
     top: 90%;
 }
-@media (max-width:999px) {
+.dashboard-btn .slick-prev{
+    position: absolute;
+    top: 110%;
+    left: 47%;
+}
+.dashboard-btn .slick-next{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+}
+.fw-small{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: 600;
+}
+.profile-section-main {
+    background-color: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
 
+
+
+}
+
+.top-green {
+    height: 90px;
+    background: linear-gradient(268deg, #4AD906 -1.49%, #3AB700 117.24%);
+    border-radius: 100%;
+    position: relative;
+    top: -2.5rem;
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    left: -5rem;
+}
+
+.bottom-green {
+    display: flex;
+    justify-content: center;
+    width: 120%;
+    height: 90px;
+    background: linear-gradient(268deg, #4AD906 -1.49%, #3AB700 117.24%);
+    border-radius: 100%;
+    position: relative;
+    left: -4rem;
+    bottom: -1.5rem;
+}
+
+.text-black {
+    color: #000;
+}
+
+.lesson-missied {
+    background: rgba(255, 83, 100, 0.15);
+    padding: 5px;
+    border-radius: 6px;
+}
+.lesson-missied p{
+    color: red;
+    font-size: 12px;
+}
+
+.todo-line {
+    width: 100%;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+}
+
+.complete-line {
+    width: 75%;
+    height: 8px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #F4A259;
+}
+
+.percentage-card {
+    background-color: #FFF;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+@media (max-width:999px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+button{
+    font-size: 11px;
+}
     .home-bg {
         background-size: contain;
         padding-bottom: 2rem;
@@ -498,6 +622,19 @@ h6 {
 }
 
 @media (max-width:400px) {
+    .dashboard-btn .slick-prev{
+        position: absolute;
+        top: 110%;
+        left: 45%;
+    }
+    .dashboard-btn .slick-next{
+        position: absolute;
+        top: 110%;
+        left: 52%;
+    }
+    .you-profile{
+        width: 300px !important;
+    }
     .fs-9 {
         font-size: 9px;
     }
