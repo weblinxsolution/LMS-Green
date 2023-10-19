@@ -326,7 +326,7 @@ h6 {
 .right-girl {
     position: absolute;
     width: 650px;
-    top: 100px;
+    top: -15rem;
     left: -100px;
 }
 
@@ -747,13 +747,62 @@ input:focus-visible {
     border-radius: 50px;
     background-color: #F9F9F9;
     border: 1px solid #E6E6E6;
-    padding: 15px 10px;
+    padding: 11px 15px;
 }
 
 .modal-body {
     padding: 1rem 3rem;
 }
+/* check */
+.form-check-input:checked::before {
+   
+}
+.re-check-mark .asphalte input {
+    padding: 5px;
+    border: 1px solid #4AD906;
+    background: #FFF;
+    
+}
+.re-check-mark .asphalte input {
+    padding: 5px;
+    border: 1px solid #4AD906;
+    background: #FFF;
+}
+.form-check-input:active {
+    filter: brightness(100%);
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url("../images/check.svg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.re-check-mark .asphalte input:focus{
+    box-shadow: none;
+}
 
+.re-check-mark .asphalte label {
+    font-size: 14px;
+}
+
+.asphalte {
+    display: flex;
+    align-items: start;
+}
+.forget-text{
+    font-size: 14px;
+}
+.sign-in-btn .globle-btn{
+    position: absolute;
+    z-index: 111;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.sign-in-btn .globle-btn button{
+   background-color: transparent;
+   box-shadow: none;
+}
 @media (max-width:1220px) {
     .lesson-images {
         width: 600px !important;
