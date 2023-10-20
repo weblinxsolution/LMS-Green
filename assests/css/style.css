@@ -1134,7 +1134,16 @@ input:focus-visible {
     color: #000;
     font-weight: 600;
 }
-
+.deatil-page-1{
+    width: 315px;
+    margin-right: .5rem;
+}
+.text-small{
+    font-size: 11px;
+    margin-left: 5px;
+    font-weight: 400;
+    color: #c5c5c5;
+}
 @media (max-width:1220px) {
     .level-id {
         font-size: 16px;
@@ -1261,7 +1270,10 @@ input:focus-visible {
 }
 
 @media (max-width:991px) {
-
+    .deatil-page-1{
+        width: 135px;
+        margin-right: .5rem;
+    }
     .last-section-bg {
         padding: 1rem;
     }
