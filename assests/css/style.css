@@ -223,7 +223,7 @@ h6 {
 
 .small-kid {
     position: absolute;
-    top: -20rem;
+    top: -9rem;
 }
 
 .small-kid img {
@@ -308,7 +308,7 @@ h6 {
 .right-girl {
     position: absolute;
     width: 650px;
-    top: -15rem;
+    top: 8rem;
     left: -100px;
 }
 
@@ -835,10 +835,12 @@ input:focus-visible {
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
     /* height: 100vh; */
+    position: sticky;
+    top: 40px;
 }
 
 .nitro {
-    height: 100vh;
+    height: 50vh;
 }
 
 .lefts-menus p {
@@ -849,7 +851,6 @@ input:focus-visible {
 .lefts-menus i {
     font-size: 28px;
     color: #091C00;
-
 }
 
 .bottom-menu-logout p {
@@ -894,6 +895,20 @@ input:focus-visible {
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
     height: 250px;
+    position: relative;
+}
+
+.hello-std-bg-4 {
+    background-color: #FFF;
+    background-image: url("../images/green-bg-left.png");
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    height: max-content;
+    position: relative;
 }
 
 .hello-std-bg-2 {
@@ -907,6 +922,7 @@ input:focus-visible {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
     height: 250px;
 }
+
 .hello-std-bg-3 {
     background-color: #FFF;
     background-image: url("../images/brain-lms-card.png");
@@ -997,6 +1013,7 @@ input:focus-visible {
     margin: 0;
     margin-top: 1px;
 }
+
 .intro-lms-book p:last-child {
     margin: 0;
     margin-top: 4px;
@@ -1005,7 +1022,12 @@ input:focus-visible {
 .book-image-dashboard {
     width: 80px;
 }
-.lms-heading-recent p{
+
+.book-image-dashboard-2 {
+    width: 185px;
+}
+
+.lms-heading-recent p {
     color: #091C00;
 }
 
@@ -1024,7 +1046,128 @@ input:focus-visible {
     color: #FFF;
 }
 
+.offcanvas-body {
+    padding-left: 0;
+}
+
+.watari {
+    font-size: 22px;
+    color: #091C00;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid #c5c5c5;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.watari:hover {
+    font-size: 22px;
+    color: #44D400;
+    font-weight: 600;
+    border: 1px solid #44D400;
+}
+
+.new-look-profile-1 {
+    width: 150px;
+}
+
+.inner-info-text p {
+    margin: 0;
+
+}
+
+.set-itemwidth p {
+    width: 100px;
+}
+
+.set-itemwidth-2 p {
+    width: 300px;
+    color: #000;
+
+}
+
+.light-green {
+    background-color: #CCFF90;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.dark-green {
+    background-color: #4AD906;
+    width: 60%;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.inner-lorem {
+    background-color: #DAFFAD;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-lorem p {
+    margin: 0;
+    padding: .5rem 0;
+}
+
+.vocablary {
+    background-color: #FFF;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    height: max-content;
+    position: relative;
+
+}
+.text-end-2{
+    color: #44D400 !important;
+    text-decoration: underline;
+}
+.counter-black p {
+    color: #000;
+    font-weight: 600;
+}
+
 @media (max-width:1220px) {
+    .level-id {
+        font-size: 16px;
+    }
+
+    .level-name {
+        font-size: 18px;
+    }
+
+    .title-name {
+        font-size: 22px;
+    }
+
+    .bottom-menu-logout p {
+        font-size: 20px;
+        color: #091C00;
+    }
+
+    .bottom-menu-logout i {
+        font-size: 20px;
+        color: #091C00;
+    }
+
+    .lefts-menus p {
+        font-size: 20px;
+        color: #091C00;
+    }
+
+    .lefts-menus i {
+        font-size: 20px;
+        color: #091C00;
+    }
+
     .lesson-images {
         width: 600px !important;
     }
@@ -1117,13 +1260,59 @@ input:focus-visible {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:991px) {
+
+    .last-section-bg {
+        padding: 1rem;
+    }
+
+    .hello-std-bg {
+        height: max-content;
+        background-image: url("../images/for-mobile-bottom.png");
+        background-position: bottom;
+    }
+
+    .hello-std-bg-2 {
+        height: max-content;
+        background-image: url("../images/for-mobile-bottom.png");
+        background-position: bottom;
+        padding-top: 8px;
+        padding-bottom: 15px;
+
+    }
+
+    .hello-std-bg-3 {
+        height: max-content;
+        background-image: url("../images/for-third.png");
+        background-position: right;
+        padding-top: 8px;
+        padding-bottom: 15px;
+
+    }
+    .hello-std-bg-4 {
+        background-image: url("../images/for-mobile-bottom.png");
+        background-position: bottom;
+    }
+
     .lesson-images {
         display: none !important;
     }
 }
 
 @media (max-width:400px) {
+    .book-image-dashboard-2 {
+        width: 100px;
+    }
+
+
+
+    .new-look-profile {
+        position: absolute;
+        right: 10px;
+        width: 92px;
+        top: 10px;
+    }
+
     .book-banner-bg {
         background-size: 100% 60%;
     }
@@ -1188,4 +1377,6 @@ input:focus-visible {
     .slider-card {
         padding: 1rem 1rem;
     }
+
+
 }
