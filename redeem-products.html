@@ -27,7 +27,7 @@
     <!-- css file -->
     <link rel="stylesheet" href="./assests/css/style.css">
 
-    <title>LMS - Vocablary</title>
+    <title>LMS - Chat</title>
 </head>
 
 <body>
@@ -230,277 +230,121 @@
                     <div class="row justify-content-between mt-xl-0 mt-4">
                         <div class="hello-std-bg-5  row mx-0 align-items-center justify-content-between">
                             <div class="last-section-bg">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="lms-heading-recent">
-                                        <p class="m-0 fw-bold fs-3">
-                                            Vocabulary
-                                        </p>
+                                <div class="lms-heading-recent col-12">
+                                    <p class="m-0 fw-bold fs-3">
+                                        Redeem Products
+                                    </p>
+                                </div>
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-6 katana d-flex justify-content-between flex-column">
+                                        <div class="mt-4 position-relative">
+                                            <input type="text" placeholder="Search Products" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div class="Review-btn-green-1 input-inner-btn input-inner-btn-1">
+                                                <button type="button" class="" data-bs-dismiss="modal">Search
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="Review-btn-green">
-                                        <button  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            Add Vocabulary
-                                        </button>
+                                    <div class="col-lg-6 d-flex justify-content-end">
+                                        <div>
+                                            <p class="text-black fs-5 m-0">
+                                                Points They Have Earned
+                                                <br>
+                                                <span class="small-text fs-6   ">
+                                                    Student Credit: 250
+                                                </span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="./assests/images/dashboard-user-2.png" alt="">
-                                </div>
+                                
                                 <!-- Table -->
-                                <div class="my-profile-input-area">
-                                    <div class="dashboard-table">
-                                        <table>
-                                            <tr>
-                                                <th>Word</th>
-                                                <th>Description</th>
-                                                <th>Action</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Name here</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper
-                                                </td>
-                                                <td>
-                                                    <svg data-bs-toggle="modal" data-bs-target="#exampleModal-1"
-                                                        class="pointer" xmlns="http://www.w3.org/2000/svg" width="50"
-                                                        height="50" viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
-                                                        <path
-                                                            d="M34.1221 19.6826L24.1656 29.639C23.1742 30.6304 20.231 31.0896 19.5735 30.4321C18.916 29.7746 19.3648 26.8315 20.3563 25.8401L30.3232 15.8732C30.569 15.6051 30.8665 15.3895 31.198 15.2395C31.5293 15.0896 31.8877 15.0083 32.2514 15.0006C32.615 14.9929 32.9766 15.0591 33.314 15.1949C33.6514 15.3308 33.9578 15.5337 34.2147 15.7913C34.4715 16.0489 34.6735 16.3558 34.8085 16.6936C34.9434 17.0314 35.0087 17.393 35 17.7567C34.9913 18.1203 34.909 18.4785 34.7582 18.8095C34.6073 19.1405 34.3909 19.4375 34.1221 19.6826Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M23.3929 17.1778H18.1746C17.0674 17.1778 16.0057 17.6176 15.2228 18.4005C14.4399 19.1834 14 20.2452 14 21.3524V31.7889C14 32.8961 14.4399 33.9579 15.2228 34.7408C16.0057 35.5237 17.0674 35.9635 18.1746 35.9635H29.6548C31.9613 35.9635 32.7857 34.0849 32.7857 31.7889V26.5706"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                    <svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                                        viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#FF1E1E" />
-                                                        <path d="M22.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M27.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M15 19.9997H34.9987" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path
-                                                            d="M17.5 23.7494V33.7488C17.5 35.8198 19.1788 37.4986 21.2498 37.4986H28.7493C30.8203 37.4986 32.499 35.8198 32.499 33.7488V23.7494"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M21.25 17.4998C21.25 16.1192 22.3692 15 23.7498 15H26.2497C27.6303 15 28.7495 16.1192 28.7495 17.4998V19.9997H21.25V17.4998Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Name here</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper
-                                                </td>
-                                                <td>
-                                                    <svg data-bs-toggle="modal" data-bs-target="#exampleModal-1"
-                                                        class="pointer" xmlns="http://www.w3.org/2000/svg" width="50"
-                                                        height="50" viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
-                                                        <path
-                                                            d="M34.1221 19.6826L24.1656 29.639C23.1742 30.6304 20.231 31.0896 19.5735 30.4321C18.916 29.7746 19.3648 26.8315 20.3563 25.8401L30.3232 15.8732C30.569 15.6051 30.8665 15.3895 31.198 15.2395C31.5293 15.0896 31.8877 15.0083 32.2514 15.0006C32.615 14.9929 32.9766 15.0591 33.314 15.1949C33.6514 15.3308 33.9578 15.5337 34.2147 15.7913C34.4715 16.0489 34.6735 16.3558 34.8085 16.6936C34.9434 17.0314 35.0087 17.393 35 17.7567C34.9913 18.1203 34.909 18.4785 34.7582 18.8095C34.6073 19.1405 34.3909 19.4375 34.1221 19.6826Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M23.3929 17.1778H18.1746C17.0674 17.1778 16.0057 17.6176 15.2228 18.4005C14.4399 19.1834 14 20.2452 14 21.3524V31.7889C14 32.8961 14.4399 33.9579 15.2228 34.7408C16.0057 35.5237 17.0674 35.9635 18.1746 35.9635H29.6548C31.9613 35.9635 32.7857 34.0849 32.7857 31.7889V26.5706"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                    <svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                                        viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#FF1E1E" />
-                                                        <path d="M22.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M27.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M15 19.9997H34.9987" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path
-                                                            d="M17.5 23.7494V33.7488C17.5 35.8198 19.1788 37.4986 21.2498 37.4986H28.7493C30.8203 37.4986 32.499 35.8198 32.499 33.7488V23.7494"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M21.25 17.4998C21.25 16.1192 22.3692 15 23.7498 15H26.2497C27.6303 15 28.7495 16.1192 28.7495 17.4998V19.9997H21.25V17.4998Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Name here</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper
-                                                </td>
-                                                <td>
-                                                    <svg data-bs-toggle="modal" data-bs-target="#exampleModal-1"
-                                                        class="pointer" xmlns="http://www.w3.org/2000/svg" width="50"
-                                                        height="50" viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
-                                                        <path
-                                                            d="M34.1221 19.6826L24.1656 29.639C23.1742 30.6304 20.231 31.0896 19.5735 30.4321C18.916 29.7746 19.3648 26.8315 20.3563 25.8401L30.3232 15.8732C30.569 15.6051 30.8665 15.3895 31.198 15.2395C31.5293 15.0896 31.8877 15.0083 32.2514 15.0006C32.615 14.9929 32.9766 15.0591 33.314 15.1949C33.6514 15.3308 33.9578 15.5337 34.2147 15.7913C34.4715 16.0489 34.6735 16.3558 34.8085 16.6936C34.9434 17.0314 35.0087 17.393 35 17.7567C34.9913 18.1203 34.909 18.4785 34.7582 18.8095C34.6073 19.1405 34.3909 19.4375 34.1221 19.6826Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M23.3929 17.1778H18.1746C17.0674 17.1778 16.0057 17.6176 15.2228 18.4005C14.4399 19.1834 14 20.2452 14 21.3524V31.7889C14 32.8961 14.4399 33.9579 15.2228 34.7408C16.0057 35.5237 17.0674 35.9635 18.1746 35.9635H29.6548C31.9613 35.9635 32.7857 34.0849 32.7857 31.7889V26.5706"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                    <svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                                        viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#FF1E1E" />
-                                                        <path d="M22.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M27.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M15 19.9997H34.9987" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path
-                                                            d="M17.5 23.7494V33.7488C17.5 35.8198 19.1788 37.4986 21.2498 37.4986H28.7493C30.8203 37.4986 32.499 35.8198 32.499 33.7488V23.7494"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M21.25 17.4998C21.25 16.1192 22.3692 15 23.7498 15H26.2497C27.6303 15 28.7495 16.1192 28.7495 17.4998V19.9997H21.25V17.4998Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Name here</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper
-                                                </td>
-                                                <td>
-                                                    <svg data-bs-toggle="modal" data-bs-target="#exampleModal-1"
-                                                        class="pointer" xmlns="http://www.w3.org/2000/svg" width="50"
-                                                        height="50" viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
-                                                        <path
-                                                            d="M34.1221 19.6826L24.1656 29.639C23.1742 30.6304 20.231 31.0896 19.5735 30.4321C18.916 29.7746 19.3648 26.8315 20.3563 25.8401L30.3232 15.8732C30.569 15.6051 30.8665 15.3895 31.198 15.2395C31.5293 15.0896 31.8877 15.0083 32.2514 15.0006C32.615 14.9929 32.9766 15.0591 33.314 15.1949C33.6514 15.3308 33.9578 15.5337 34.2147 15.7913C34.4715 16.0489 34.6735 16.3558 34.8085 16.6936C34.9434 17.0314 35.0087 17.393 35 17.7567C34.9913 18.1203 34.909 18.4785 34.7582 18.8095C34.6073 19.1405 34.3909 19.4375 34.1221 19.6826Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M23.3929 17.1778H18.1746C17.0674 17.1778 16.0057 17.6176 15.2228 18.4005C14.4399 19.1834 14 20.2452 14 21.3524V31.7889C14 32.8961 14.4399 33.9579 15.2228 34.7408C16.0057 35.5237 17.0674 35.9635 18.1746 35.9635H29.6548C31.9613 35.9635 32.7857 34.0849 32.7857 31.7889V26.5706"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                    <svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                                        viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#FF1E1E" />
-                                                        <path d="M22.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M27.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M15 19.9997H34.9987" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path
-                                                            d="M17.5 23.7494V33.7488C17.5 35.8198 19.1788 37.4986 21.2498 37.4986H28.7493C30.8203 37.4986 32.499 35.8198 32.499 33.7488V23.7494"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M21.25 17.4998C21.25 16.1192 22.3692 15 23.7498 15H26.2497C27.6303 15 28.7495 16.1192 28.7495 17.4998V19.9997H21.25V17.4998Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Name here</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper
-                                                </td>
-                                                <td>
-                                                    <svg data-bs-toggle="modal" data-bs-target="#exampleModal-1"
-                                                        class="pointer" xmlns="http://www.w3.org/2000/svg" width="50"
-                                                        height="50" viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
-                                                        <path
-                                                            d="M34.1221 19.6826L24.1656 29.639C23.1742 30.6304 20.231 31.0896 19.5735 30.4321C18.916 29.7746 19.3648 26.8315 20.3563 25.8401L30.3232 15.8732C30.569 15.6051 30.8665 15.3895 31.198 15.2395C31.5293 15.0896 31.8877 15.0083 32.2514 15.0006C32.615 14.9929 32.9766 15.0591 33.314 15.1949C33.6514 15.3308 33.9578 15.5337 34.2147 15.7913C34.4715 16.0489 34.6735 16.3558 34.8085 16.6936C34.9434 17.0314 35.0087 17.393 35 17.7567C34.9913 18.1203 34.909 18.4785 34.7582 18.8095C34.6073 19.1405 34.3909 19.4375 34.1221 19.6826Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M23.3929 17.1778H18.1746C17.0674 17.1778 16.0057 17.6176 15.2228 18.4005C14.4399 19.1834 14 20.2452 14 21.3524V31.7889C14 32.8961 14.4399 33.9579 15.2228 34.7408C16.0057 35.5237 17.0674 35.9635 18.1746 35.9635H29.6548C31.9613 35.9635 32.7857 34.0849 32.7857 31.7889V26.5706"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                    <svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                                        viewBox="0 0 50 50" fill="none">
-                                                        <rect width="50" height="50" rx="10" fill="#FF1E1E" />
-                                                        <path d="M22.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M27.5 26.2493V32.4989" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M15 19.9997H34.9987" stroke="white" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path
-                                                            d="M17.5 23.7494V33.7488C17.5 35.8198 19.1788 37.4986 21.2498 37.4986H28.7493C30.8203 37.4986 32.499 35.8198 32.499 33.7488V23.7494"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                        <path
-                                                            d="M21.25 17.4998C21.25 16.1192 22.3692 15 23.7498 15H26.2497C27.6303 15 28.7495 16.1192 28.7495 17.4998V19.9997H21.25V17.4998Z"
-                                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                        </table>
+                                <div class="row mt-3 gap-md-0 gap-3">
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-1.png" alt="">
+                                            </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here <br><span class="fw-bold">50 points</span></p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- Add Vocabulary Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content vocab">
-                                            <div class="modal-header">
-                                                <p class="modal-title fs-4" id="exampleModalLabel">Add Vocabulary</p>
-                                                
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-2.png" alt="">
                                             </div>
-                                            <div class="modal-body">
-                                                <div>
-                                                    <input type="text" placeholder="Enter Word" class="form-control"
-                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
-                                                </div>
-                                                <div class="mt-4">
-                                                    <textarea class="form-control" placeholder="Description" rows="5"
-                                                        id="floatingTextarea"></textarea>
-                                                </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here <br><span class="fw-bold">50 points</span></p>
                                             </div>
-                                            <div class="modal-footer Review-btn-green">
-                                                <button type="button" class=""
-                                                    data-bs-dismiss="modal">Add Vocabulary</button>
-
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-3.png" alt="">
+                                            </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here<br><span class="fw-bold">50 points</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-4.png" alt="">
+                                            </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here<br><span class="fw-bold">50 points</span></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- edit Vocabulary Modal -->
-                                <div class="modal fade" id="exampleModal-1" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel-1" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content vocab">
-                                            <div class="modal-header">
-                                                <p class="modal-title fs-4" id="exampleModalLabel">Add Vocabulary</p>
-                                                
+                                <div class="row mt-3 gap-md-0 gap-3">
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-1.png" alt="">
                                             </div>
-                                            <div class="modal-body">
-                                                <div>
-                                                    <input type="text" placeholder="Enter Word" class="form-control"
-                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
-                                                </div>
-                                                <div class="mt-4">
-                                                    <textarea class="form-control" placeholder="Description" rows="5"
-                                                        id="floatingTextarea"></textarea>
-                                                </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here<br><span class="fw-bold">50 points</span></p>
                                             </div>
-                                            <div class="modal-footer Review-btn-green">
-                                                <button type="button" class=""
-                                                    data-bs-dismiss="modal">Save</button>
-
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-2.png" alt="">
+                                            </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here<br><span class="fw-bold">50 points</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-3.png" alt="">
+                                            </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here<br><span class="fw-bold">50 points</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="white-bg-product">
+                                            <div>
+                                                <img src="./assests/images/product-4.png" alt="">
+                                            </div>
+                                            <div class="text-center pt-3 pb-2">
+                                                <p class="fs-6 text-black">Books Name Here<br><span class="fw-bold">50 points</span></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
