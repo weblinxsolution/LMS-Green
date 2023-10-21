@@ -27,7 +27,7 @@
     <!-- css file -->
     <link rel="stylesheet" href="./assests/css/style.css">
 
-    <title>LMS - Teacher</title>
+    <title>LMS - Payslip</title>
 </head>
 
 <body>
@@ -81,6 +81,7 @@
             </nav>
         </header>
     </div>
+
     <!-- DASHBOARD BODY -->
     <section class="flashy-card mt-4">
         <div class="wrapper">
@@ -225,112 +226,141 @@
                     </div>
                 </div>
                 <!-- Main Section -->
-                <div class="col-lg-9">
+                <div class="col-xl-9 col-12">
                     <div class="row justify-content-between mt-xl-0 mt-4">
-                        <div class="hello-std-bg-5 row mx-0 align-items-center justify-content-between">
+                        <div class="hello-std-bg-5  row mx-0 align-items-center justify-content-between">
                             <div class="last-section-bg">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="lms-heading-recent">
-                                        <p class="m-0 fw-bold fs-6">
-                                            Teachers Review 
+                                        <p class="m-0 fw-bold fs-3">
+                                            Submit Payment Slip
                                         </p>
                                     </div>
-                                </div>
-                                <div>
-                                    <img src="./assests/images/dashboard-user-2.png" alt="">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between book-reviws-lms mt-md-3 mb-md-3">
-                                    <div class="d-md-flex gap-xl-1 gap-2 align-items-start">
-                                        <div class="book-image-dashboard-2 deatil-page-1">
-                                            <img src="./assests/images/book-images.png"  class="" alt="">
-                                        </div>
-                                        <div class="intro-lms-book">
-                                            <p class="fs-4 fw-bold text-black">Teacher Name<span class="text-small">20/02/2023 07:00 PM - 08:00 PM (Tue)</span></p>
-                                            <p class="fs-6">Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper nunc sagittis fames et mi faucibus. Commodo mi duis eget varius sit amet. Tincidunt diam eget cursus quam justo pharetra elit imperdiet. Fames orci purus blandit sed lacus proin cursus. Amet tristique purus sit dolor est habitasse tellus cursus.</p>
-                                        </div>
+                                    <div class="Review-btn-green">
+                                        <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Add Payslip
+                                        </button>
                                     </div>
                                 </div>
                                 <div>
                                     <img src="./assests/images/dashboard-user-2.png" alt="">
                                 </div>
-                                <div class="d-flex align-items-center justify-content-between book-reviws-lms mt-md-3 mb-md-3">
-                                    <div class="d-md-flex gap-xl-1 gap-2 align-items-start">
-                                        <div class="book-image-dashboard-2 deatil-page-1">
-                                            <img src="./assests/images/book-images.png"  class="" alt="">
-                                        </div>
-                                        <div class="intro-lms-book">
-                                            <p class="fs-4 fw-bold text-black">Teacher Name<span class="text-small">20/02/2023 07:00 PM - 08:00 PM (Tue)</span></p>
-                                            <p class="fs-6">Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper nunc sagittis fames et mi faucibus. Commodo mi duis eget varius sit amet. Tincidunt diam eget cursus quam justo pharetra elit imperdiet. Fames orci purus blandit sed lacus proin cursus. Amet tristique purus sit dolor est habitasse tellus cursus.</p>
-                                        </div>
+                                <!-- Table -->
+                                <div class="my-profile-input-area">
+                                    <div class="dashboard-table">
+                                        <table>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Subject</th>
+                                                <th>Date</th>
+                                                <th>Time</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Subject Name
+                                                </td>
+                                                <td>20/02/2023
+                                                </td>
+                                                <td>07:00 PM
+                                                </td>
+                                                <td>Pending
+                                                </td>
+                                                <td>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                        viewBox="0 0 50 50" fill="none">
+                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2003 19.4286C22.1233 19.4286 19.6289 21.923 19.6289 25C19.6289 28.0771 22.1233 30.5714 25.2003 30.5714C28.2774 30.5714 30.7718 28.0771 30.7718 25C30.7718 21.923 28.2774 19.4286 25.2003 19.4286ZM21.8575 25C21.8575 23.1539 23.3542 21.6571 25.2003 21.6571C27.0465 21.6571 28.5432 23.1539 28.5432 25C28.5432 26.8462 27.0465 28.3429 25.2003 28.3429C23.3542 28.3429 21.8575 26.8462 21.8575 25Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2019 12C18.4952 12 13.9778 16.0177 11.3559 19.4239L11.3086 19.4853C10.7156 20.2554 10.1695 20.9647 9.79904 21.8033C9.40228 22.7015 9.23047 23.6802 9.23047 25C9.23047 26.3198 9.40228 27.2985 9.79904 28.1967C10.1695 29.0353 10.7156 29.7446 11.3086 30.5147L11.3559 30.576C13.9778 33.9823 18.4952 38 25.2019 38C31.9086 38 36.426 33.9823 39.0479 30.576L39.0951 30.5147C39.6882 29.7446 40.2342 29.0353 40.6047 28.1967C41.0016 27.2985 41.1733 26.3198 41.1733 25C41.1733 23.6802 41.0016 22.7015 40.6047 21.8033C40.2342 20.9647 39.6882 20.2554 39.0951 19.4853L39.0479 19.4239C36.426 16.0177 31.9086 12 25.2019 12ZM13.1219 20.7832C15.5427 17.6382 19.4824 14.2286 25.2019 14.2286C30.9213 14.2286 34.8611 17.6382 37.2819 20.7832C37.9336 21.6298 38.3153 22.1357 38.5662 22.7038C38.8009 23.235 38.9448 23.8841 38.9448 25C38.9448 26.1159 38.8009 26.765 38.5662 27.2962C38.3153 27.8643 37.9336 28.3702 37.2819 29.2168C34.8611 32.3619 30.9213 35.7714 25.2019 35.7714C19.4824 35.7714 15.5427 32.3619 13.1219 29.2168C12.4703 28.3702 12.0886 27.8643 11.8375 27.2962C11.6029 26.765 11.459 26.1159 11.459 25C11.459 23.8841 11.6029 23.235 11.8375 22.7038C12.0886 22.1357 12.4703 21.6298 13.1219 20.7832Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Subject Name
+                                                </td>
+                                                <td>20/02/2023
+                                                </td>
+                                                <td>07:00 PM
+                                                </td>
+                                                <td>Pending
+                                                </td>
+                                                <td>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                        viewBox="0 0 50 50" fill="none">
+                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2003 19.4286C22.1233 19.4286 19.6289 21.923 19.6289 25C19.6289 28.0771 22.1233 30.5714 25.2003 30.5714C28.2774 30.5714 30.7718 28.0771 30.7718 25C30.7718 21.923 28.2774 19.4286 25.2003 19.4286ZM21.8575 25C21.8575 23.1539 23.3542 21.6571 25.2003 21.6571C27.0465 21.6571 28.5432 23.1539 28.5432 25C28.5432 26.8462 27.0465 28.3429 25.2003 28.3429C23.3542 28.3429 21.8575 26.8462 21.8575 25Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2019 12C18.4952 12 13.9778 16.0177 11.3559 19.4239L11.3086 19.4853C10.7156 20.2554 10.1695 20.9647 9.79904 21.8033C9.40228 22.7015 9.23047 23.6802 9.23047 25C9.23047 26.3198 9.40228 27.2985 9.79904 28.1967C10.1695 29.0353 10.7156 29.7446 11.3086 30.5147L11.3559 30.576C13.9778 33.9823 18.4952 38 25.2019 38C31.9086 38 36.426 33.9823 39.0479 30.576L39.0951 30.5147C39.6882 29.7446 40.2342 29.0353 40.6047 28.1967C41.0016 27.2985 41.1733 26.3198 41.1733 25C41.1733 23.6802 41.0016 22.7015 40.6047 21.8033C40.2342 20.9647 39.6882 20.2554 39.0951 19.4853L39.0479 19.4239C36.426 16.0177 31.9086 12 25.2019 12ZM13.1219 20.7832C15.5427 17.6382 19.4824 14.2286 25.2019 14.2286C30.9213 14.2286 34.8611 17.6382 37.2819 20.7832C37.9336 21.6298 38.3153 22.1357 38.5662 22.7038C38.8009 23.235 38.9448 23.8841 38.9448 25C38.9448 26.1159 38.8009 26.765 38.5662 27.2962C38.3153 27.8643 37.9336 28.3702 37.2819 29.2168C34.8611 32.3619 30.9213 35.7714 25.2019 35.7714C19.4824 35.7714 15.5427 32.3619 13.1219 29.2168C12.4703 28.3702 12.0886 27.8643 11.8375 27.2962C11.6029 26.765 11.459 26.1159 11.459 25C11.459 23.8841 11.6029 23.235 11.8375 22.7038C12.0886 22.1357 12.4703 21.6298 13.1219 20.7832Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Subject Name
+                                                </td>
+                                                <td>20/02/2023
+                                                </td>
+                                                <td>07:00 PM
+                                                </td>
+                                                <td>Pending
+                                                </td>
+                                                <td>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                        viewBox="0 0 50 50" fill="none">
+                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2003 19.4286C22.1233 19.4286 19.6289 21.923 19.6289 25C19.6289 28.0771 22.1233 30.5714 25.2003 30.5714C28.2774 30.5714 30.7718 28.0771 30.7718 25C30.7718 21.923 28.2774 19.4286 25.2003 19.4286ZM21.8575 25C21.8575 23.1539 23.3542 21.6571 25.2003 21.6571C27.0465 21.6571 28.5432 23.1539 28.5432 25C28.5432 26.8462 27.0465 28.3429 25.2003 28.3429C23.3542 28.3429 21.8575 26.8462 21.8575 25Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2019 12C18.4952 12 13.9778 16.0177 11.3559 19.4239L11.3086 19.4853C10.7156 20.2554 10.1695 20.9647 9.79904 21.8033C9.40228 22.7015 9.23047 23.6802 9.23047 25C9.23047 26.3198 9.40228 27.2985 9.79904 28.1967C10.1695 29.0353 10.7156 29.7446 11.3086 30.5147L11.3559 30.576C13.9778 33.9823 18.4952 38 25.2019 38C31.9086 38 36.426 33.9823 39.0479 30.576L39.0951 30.5147C39.6882 29.7446 40.2342 29.0353 40.6047 28.1967C41.0016 27.2985 41.1733 26.3198 41.1733 25C41.1733 23.6802 41.0016 22.7015 40.6047 21.8033C40.2342 20.9647 39.6882 20.2554 39.0951 19.4853L39.0479 19.4239C36.426 16.0177 31.9086 12 25.2019 12ZM13.1219 20.7832C15.5427 17.6382 19.4824 14.2286 25.2019 14.2286C30.9213 14.2286 34.8611 17.6382 37.2819 20.7832C37.9336 21.6298 38.3153 22.1357 38.5662 22.7038C38.8009 23.235 38.9448 23.8841 38.9448 25C38.9448 26.1159 38.8009 26.765 38.5662 27.2962C38.3153 27.8643 37.9336 28.3702 37.2819 29.2168C34.8611 32.3619 30.9213 35.7714 25.2019 35.7714C19.4824 35.7714 15.5427 32.3619 13.1219 29.2168C12.4703 28.3702 12.0886 27.8643 11.8375 27.2962C11.6029 26.765 11.459 26.1159 11.459 25C11.459 23.8841 11.6029 23.235 11.8375 22.7038C12.0886 22.1357 12.4703 21.6298 13.1219 20.7832Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="./assests/images/dashboard-user-2.png" alt="">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between book-reviws-lms mt-md-3 mb-md-3">
-                                    <div class="d-md-flex gap-xl-1 gap-2 align-items-start">
-                                        <div class="book-image-dashboard-2 deatil-page-1">
-                                            <img src="./assests/images/book-images.png"  class="" alt="">
-                                        </div>
-                                        <div class="intro-lms-book">
-                                            <p class="fs-4 fw-bold text-black">Teacher Name<span class="text-small">20/02/2023 07:00 PM - 08:00 PM (Tue)</span></p>
-                                            <p class="fs-6">Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper nunc sagittis fames et mi faucibus. Commodo mi duis eget varius sit amet. Tincidunt diam eget cursus quam justo pharetra elit imperdiet. Fames orci purus blandit sed lacus proin cursus. Amet tristique purus sit dolor est habitasse tellus cursus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <img src="./assests/images/dashboard-user-2.png" alt="">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between book-reviws-lms mt-md-3 mb-md-3">
-                                    <div class="d-md-flex gap-xl-1 gap-2 align-items-start">
-                                        <div class="book-image-dashboard-2 deatil-page-1">
-                                            <img src="./assests/images/book-images.png"  class="" alt="">
-                                        </div>
-                                        <div class="intro-lms-book">
-                                            <p class="fs-4 fw-bold text-black">Teacher Name<span class="text-small">20/02/2023 07:00 PM - 08:00 PM (Tue)</span></p>
-                                            <p class="fs-6">Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper nunc sagittis fames et mi faucibus. Commodo mi duis eget varius sit amet. Tincidunt diam eget cursus quam justo pharetra elit imperdiet. Fames orci purus blandit sed lacus proin cursus. Amet tristique purus sit dolor est habitasse tellus cursus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <img src="./assests/images/dashboard-user-2.png" alt="">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between book-reviws-lms mt-md-3 mb-md-3">
-                                    <div class="d-md-flex gap-xl-1 gap-2 align-items-start">
-                                        <div class="book-image-dashboard-2 deatil-page-1">
-                                            <img src="./assests/images/book-images.png"  class="" alt="">
-                                        </div>
-                                        <div class="intro-lms-book">
-                                            <p class="fs-4 fw-bold text-black">Teacher Name<span class="text-small">20/02/2023 07:00 PM - 08:00 PM (Tue)</span></p>
-                                            <p class="fs-6">Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper nunc sagittis fames et mi faucibus. Commodo mi duis eget varius sit amet. Tincidunt diam eget cursus quam justo pharetra elit imperdiet. Fames orci purus blandit sed lacus proin cursus. Amet tristique purus sit dolor est habitasse tellus cursus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <img src="./assests/images/dashboard-user-2.png" alt="">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between book-reviws-lms mt-md-3 mb-md-3">
-                                    <div class="d-md-flex gap-xl-1 gap-2 align-items-start">
-                                        <div class="book-image-dashboard-2 deatil-page-1">
-                                            <img src="./assests/images/book-images.png"  class="" alt="">
-                                        </div>
-                                        <div class="intro-lms-book">
-                                            <p class="fs-4 fw-bold text-black">Teacher Name<span class="text-small">20/02/2023 07:00 PM - 08:00 PM (Tue)</span></p>
-                                            <p class="fs-6">Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper nunc sagittis fames et mi faucibus. Commodo mi duis eget varius sit amet. Tincidunt diam eget cursus quam justo pharetra elit imperdiet. Fames orci purus blandit sed lacus proin cursus. Amet tristique purus sit dolor est habitasse tellus cursus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <img src="./assests/images/dashboard-user-2.png" alt="">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between book-reviws-lms mt-md-3 mb-md-3">
-                                    <div class="d-md-flex gap-xl-1 gap-2 align-items-start">
-                                        <div class="book-image-dashboard-2 deatil-page-1">
-                                            <img src="./assests/images/book-images.png"  class="" alt="">
-                                        </div>
-                                        <div class="intro-lms-book">
-                                            <p class="fs-4 fw-bold text-black">Teacher Name<span class="text-small">20/02/2023 07:00 PM - 08:00 PM (Tue)</span></p>
-                                            <p class="fs-6">Lorem ipsum dolor sit amet consectetur. Consectetur non sed semper nunc sagittis fames et mi faucibus. Commodo mi duis eget varius sit amet. Tincidunt diam eget cursus quam justo pharetra elit imperdiet. Fames orci purus blandit sed lacus proin cursus. Amet tristique purus sit dolor est habitasse tellus cursus.</p>
+                                <!-- Add Vocabulary Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content vocab">
+                                            <div class="modal-header">
+                                                <p class="modal-title fs-6" id="exampleModalLabel">Add Payslip</p>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    <input type="text" placeholder="Enter Word" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mt-4">
+                                                    <textarea class="form-control" placeholder="Description" rows="5"
+                                                        id="floatingTextarea"></textarea>
+                                                </div>
+                                                <div class="mt-4 position-relative">
+                                                    <input type="text" placeholder="Enter Word" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        <div class="Review-btn-green-1 input-inner-btn">
+                                                            <button type="button" class="" data-bs-dismiss="modal">Browse
+                                                            </button>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer Review-btn-green">
+                                                <button type="button" class="" data-bs-dismiss="modal">Submit
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -341,6 +371,7 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="section-2">
         <div class="footer-bg">

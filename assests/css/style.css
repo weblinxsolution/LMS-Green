@@ -840,7 +840,7 @@ input:focus-visible {
 }
 
 .nitro {
-    height: 50vh;
+    height: 55vh;
 }
 
 .lefts-menus p {
@@ -1002,6 +1002,7 @@ input:focus-visible {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
     padding: 3rem 1rem;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .text-underline {
@@ -1042,6 +1043,13 @@ input:focus-visible {
     border-radius: 15px;
     background: #44D400;
     padding: 15px 30px;
+    border: none;
+    color: #FFF;
+}
+.Review-btn-green-1 button {
+    border-radius: 15px;
+    background: #44D400;
+    padding: 10px 25px;
     border: none;
     color: #FFF;
 }
@@ -1126,23 +1134,92 @@ input:focus-visible {
     position: relative;
 
 }
-.text-end-2{
+
+.text-end-2 {
     color: #44D400 !important;
     text-decoration: underline;
 }
+
 .counter-black p {
     color: #000;
     font-weight: 600;
 }
-.deatil-page-1{
+
+.deatil-page-1 {
     width: 315px;
     margin-right: .5rem;
 }
-.text-small{
+
+.text-small {
     font-size: 11px;
     margin-left: 5px;
     font-weight: 400;
     color: #c5c5c5;
+}
+.last-section-bg .dashboard-table {
+    margin-top: 1rem;
+    border-radius: 10px !important;
+    background-color: #FFFFFF;
+    border: 1px solid #B8B8B8;
+    width: 100%;
+}
+.last-section-bg .dashboard-table table {
+    width: 100%;
+    border-radius: 10px !important;
+    /* background-color: #FFFFFF; */
+}
+
+.last-section-bg .dashboard-table tr th {
+    position: relative;
+    background-color: #AAFF83;
+    color: #000;
+    overflow: hidden;
+}
+.last-section-bg .dashboard-table tr th:nth-child(1) {
+    border-radius: 10px 0px 0px 0px;
+}
+.last-section-bg .dashboard-table tr th:nth-last-child(1) {
+    border-radius: 0 10px 0 0;
+}
+
+.last-section-bg .dashboard-table th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+.pointer{
+    cursor: pointer;
+}
+.modal-header{
+    border-bottom: none;
+}
+.vocab .modal-footer{
+    border-top: none;
+    justify-content: start;
+}
+.vocab .modal-body{
+    padding: 1rem 1rem !important;
+}
+.vocab .modal-body input{
+    padding: 15px 10px;
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+}
+.vocab .modal-body textarea{
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+}
+.modal-title{
+    color: #091C00;
+    font-weight: 500;
+    font-size: 35px !important;
+}
+.input-inner-btn{
+    position: absolute;
+    top: 8px;
+    right: 12px;
 }
 @media (max-width:1220px) {
     .level-id {
@@ -1270,10 +1347,21 @@ input:focus-visible {
 }
 
 @media (max-width:991px) {
-    .deatil-page-1{
+    .last-section-bg .dashboard-table {
+       
+        width: max-content;
+    }
+    table{
+        width: max-content !important;
+    }
+    .my-profile-input-area{
+        overflow-x: scroll;
+    }
+    .deatil-page-1 {
         width: 135px;
         margin-right: .5rem;
     }
+
     .last-section-bg {
         padding: 1rem;
     }
@@ -1301,6 +1389,7 @@ input:focus-visible {
         padding-bottom: 15px;
 
     }
+
     .hello-std-bg-4 {
         background-image: url("../images/for-mobile-bottom.png");
         background-position: bottom;
