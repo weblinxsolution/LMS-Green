@@ -669,7 +669,7 @@ input:focus-visible {
 }
 
 .pagination-arrow img {
-    width: 20px;
+    width: 30px;
 }
 
 .alig-margin {
@@ -1635,7 +1635,7 @@ video {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:600px) {
     .book-image-dashboard-2 {
         width: 100px;
     }
