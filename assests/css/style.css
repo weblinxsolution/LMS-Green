@@ -483,12 +483,18 @@ h6 {
     position: absolute;
     top: 110%;
     left: 47%;
+    z-index: 999;
+    
+}
+.dashboard-btn .slick-prev:before{
+    font-size: 25px !important;
 }
 
 .dashboard-btn .slick-next {
     position: absolute;
     top: 110%;
     left: 50%;
+    z-index: 999;
 }
 
 .fw-small {
