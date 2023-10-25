@@ -1,0 +1,15 @@
+https://lms-green.netlify.app/about
+https://lms-green.netlify.app/bookpdf
+https://lms-green.netlify.app/contact
+https://lms-green.netlify.app/dashboard
+https://lms-green.netlify.app/dashboard-01
+https://lms-green.netlify.app/download-book
+https://lms-green.netlify.app/lessons-history
+https://lms-green.netlify.app/level-shark-family
+https://lms-green.netlify.app/payslip
+https://lms-green.netlify.app/profile
+https://lms-green.netlify.app/quiz
+https://lms-green.netlify.app/redeem-products
+https://lms-green.netlify.app/student-wonder
+https://lms-green.netlify.app/teacher-review
+https://lms-green.netlify.app/vocabulary
