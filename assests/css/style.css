@@ -9,7 +9,28 @@ body {
     font-family: 'Poppins', sans-serif;
 
 }
-
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #45D700; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #33a200; 
+  }
 h1 {
     font-size: 40px;
     font-weight: 900;
@@ -171,7 +192,13 @@ h6 {
     width: 100%;
 }
 
+th {
+    font-size: 15px;
+}
 
+td {
+    font-size: 15px;
+}
 
 
 .section-2 {
@@ -1202,6 +1229,16 @@ input:focus-visible {
     background-color: #AAFF83;
     color: #000;
     overflow: hidden;
+    padding: 1rem 2rem;
+}
+
+.chat-box-divider img {
+    width: 100%;
+    height: 100%;
+}
+
+.last-section-bg .dashboard-table tr td {
+    padding: 1rem 2rem;
 }
 
 .last-section-bg .dashboard-table tr th:nth-child(1) {
@@ -1477,7 +1514,61 @@ video {
 .view-history-text:hover {
     color: #44D400 !important;
 }
+.todays{
+    text-align: center;
+    position: relative;
 
+}
+.todays::before{
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: #d5d5d5;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.todays::after{
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: #d5d5d5;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.my-chats{
+    display: flex;
+    justify-content: end;
+}
+.teacher-chat-inner{
+    justify-content: flex-start;
+}
+.my-chats p{
+    background-color: #45D700;
+    border-radius: 25px;
+    padding: 1rem;
+    max-width: 350px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teacher-chat-inner p{
+    background-color: #EFEFEF;
+    border-radius: 25px;
+    padding: 1rem;
+    max-width: 350px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chat-history-chat{
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 0 1rem;
+}
 @media (max-width:1220px) {
     .level-id {
         font-size: 16px;
@@ -1739,11 +1830,13 @@ video {
 
 
 }
+
 @media (max-width:600px) {
-    .missed-lesson{
+    .missed-lesson {
         padding: 3rem 1rem;
     }
-    .missed-lesson p{
+
+    .missed-lesson p {
         font-size: 16px !important;
     }
 }
