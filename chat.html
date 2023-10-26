@@ -324,7 +324,7 @@
                     <div class="row justify-content-between mt-xl-0 mt-4">
                         <div class="hello-std-bg-5 ">
                             <div class="last-section-bg row mx-0">
-                                <div class="col-3 d-flex">
+                                <div class="col-lg-3 col-12 d-flex">
                                     <div>
                                         <div class="lms-heading-recent">
                                             <p class="m-0 fw-bold fs-3">
@@ -334,7 +334,7 @@
                                         <div>
                                             <img src="./assests/images/dashboard-user-2.png" alt="">
                                         </div>
-                                        <div class="mt-3">
+                                        <div class="mt-3 on-scroll-teacher d-lg-block d-none">
                                             <div class="teacher-name d-flex align-items-center gap-3 mt-4">
                                                 <img src="./assests/images/teacher-name-icon.png" style="width: 25%;"
                                                     alt="">
@@ -368,13 +368,61 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- This is on mobile screen -->
+                                        <div class="mt-3 on-scroll-teacher d-lg-none d-block">
+                                            <div class="teacher-name d-flex align-items-center gap-3 mt-4" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                                aria-controls="offcanvasRight">
+                                                <img src="./assests/images/teacher-name-icon.png" style="width: 25%;"
+                                                    alt="">
+                                                <div>
+                                                    <p class="m-0 text-black fs-6" style="font-weight: 500;">Teacher
+                                                        Name</p>
+                                                        <span>last chat is here</span>
+                                                </div>
+                                            </div>
+                                            <div class="teacher-name d-flex align-items-center gap-3 mt-4" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                                aria-controls="offcanvasRight">
+                                                <img src="./assests/images/teacher-name-icon.png" style="width: 25%;"
+                                                    alt="">
+                                                <div>
+                                                    <p class="m-0 text-black fs-6" style="font-weight: 500;">Teacher
+                                                        Name</p>
+                                                        <span>last chat is here</span>
+                                                </div>
+                                            </div>
+                                            <div class="teacher-name d-flex align-items-center gap-3 mt-4" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                                aria-controls="offcanvasRight">
+                                                <img src="./assests/images/teacher-name-icon.png" style="width: 25%;"
+                                                    alt="">
+                                                <div>
+                                                    <p class="m-0 text-black fs-6" style="font-weight: 500;">Teacher
+                                                        Name</p>
+                                                        <span>last chat is here</span>
+                                                </div>
+                                            </div>
+                                            <div class="teacher-name d-flex align-items-center gap-3 mt-4" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                                aria-controls="offcanvasRight">
+                                                <img src="./assests/images/teacher-name-icon.png" style="width: 25%;"
+                                                    alt="">
+                                                <div>
+                                                    <p class="m-0 text-black fs-6" style="font-weight: 500;">Teacher
+                                                        Name</p>
+                                                        <span>last chat is here</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="chat-box-divider">
+                                    <div class="chat-box-divider d-lg-block d-none">
                                         <img src="./assests/images/chat-box-divider.png" alt="">
                                     </div>
                                 </div>
 
-                                <div class="col-8 position-relative">
+                                <!-- Visible on desktop -->
+                                <div class="col-md-8 d-lg-block d-none position-relative">
                                     <div class="teacher-name d-flex align-items-center gap-3">
                                         <img src="./assests/images/teacher-name-icon.png" style="width: 7%;" alt="">
                                         <div>
@@ -429,7 +477,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="send-meassge-boder ">  
+                                        <div class="send-meassge-boder ">
                                             <img src="./assests/images/dashboard-user-2.png" alt="">
                                         </div>
                                     </div>
@@ -446,12 +494,89 @@
                                                     stroke-linejoin="round" />
                                             </svg></button>
                                     </div>
-
-
                                 </div>
+                                <!-- Ofcanvas chats -->
+                                <div class="offcanvas offcanvas-end d-lg-none d-block" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="teacher-name d-flex align-items-center gap-3">
+                                            <img src="./assests/images/teacher-name-icon.png" style="width: 7%;" alt="">
+                                            <div>
+                                                <p class="m-0 text-black fs-6" style="font-weight: 500;">Teacher
+                                                    Name</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <img src="./assests/images/dashboard-user-2.png" alt="">
+                                        </div>
+                                        <div class="chat-history-chat">
+                                            <div class="todays">
+                                                <p class="fw-bold">
+                                                    Today
+                                                </p>
+                                            </div>
+                                            <div class="allchats">
+                                                <div class="my-chats">
+                                                    <p>
+                                                        <span class="text-white">Lorem ipsum dolor</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="allchats">
+                                                <div class="my-chats">
+                                                    <p>
+                                                        <span class="text-white">Lorem ipsum dolor amet</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="teacher-chat">
+                                                <div class="teacher-chat-inner my-chats">
+                                                    <p>
+                                                        <span class="text-black">Lorem ipsum dolor sit amet
+                                                            consectetur</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="allchats">
+                                                <div class="my-chats">
+                                                    <p>
+                                                        <span class="text-white">Lorem ipsum dolor sit amet
+                                                            consectetur</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="allchats">
+                                                <div class="my-chats">
+                                                    <p>
+                                                        <span class="text-white">Lorem ipsum dolor sit amet consectetur
+                                                            dolor sit amet</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="send-meassge-boder ">
+                                                <img src="./assests/images/dashboard-user-2.png" alt="">
+                                            </div>
+                                        </div>
 
-
-
+                                        <div class="input-group mt-3 send-message-input-area">
+                                            <input type="text" class="form-control" placeholder="Enter Word"
+                                                aria-label="Enter Word" aria-describedby="button-addon2">
+                                            <button class="btn btn-outline-secondary" type="button"
+                                                id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="31"
+                                                    height="31" viewBox="0 0 31 31" fill="none">
+                                                    <path
+                                                        d="M12.8014 18.1927L28.5624 2.43748M13.2494 18.9012L16.8232 26.049C17.6869 27.7763 18.1187 28.64 18.6627 28.8715C19.1348 29.0725 19.6745 29.036 20.1155 28.7736C20.6235 28.4711 20.9354 27.5572 21.5595 25.7296L28.312 5.95424C28.8559 4.36183 29.1277 3.56562 28.9416 3.03891C28.7797 2.5807 28.4193 2.22026 27.9612 2.05838C27.4344 1.87229 26.6382 2.14417 25.0457 2.68791L5.27028 9.44051C3.44271 10.0646 2.52891 10.3766 2.22641 10.8846C1.96389 11.3255 1.92752 11.8651 2.1285 12.3372C2.36009 12.8812 3.22375 13.3131 4.95106 14.1767L12.0988 17.7506C12.3835 17.8929 12.5258 17.964 12.6489 18.0591C12.7585 18.1435 12.8566 18.2416 12.9408 18.3509C13.036 18.4743 13.1071 18.6166 13.2494 18.9012Z"
+                                                        stroke="#44D500" stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

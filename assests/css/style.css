@@ -1573,11 +1573,13 @@ video {
     align-items: center;
     justify-content: center;
 }
-.form-control:focus{
+
+.form-control:focus {
     box-shadow: none;
     /* border: none; */
     border-color: #E6E6E6;
 }
+
 .chat-history-chat {
     height: 80vh;
     overflow-y: scroll;
@@ -1585,18 +1587,21 @@ video {
     /* background-color: #1a520040; */
     /* position: relative; */
 }
-.send-message-input-area{
+
+.send-message-input-area {
     position: absolute;
     width: 100%;
     bottom: 0;
 }
-.send-message-input-area input{
+
+.send-message-input-area input {
     background-color: #F9F9F9;
     border: 1px solid #E6E6E6;
     border-radius: 20px;
     padding: 10px 20px;
 }
-.send-message-input-area button{
+
+.send-message-input-area button {
     background-color: #F9F9F9;
     border-right: 1px solid #E6E6E6;
     border-left: 0 solid #E6E6E6;
@@ -1604,9 +1609,19 @@ video {
     border-bottom: 1px solid #E6E6E6;
     border-radius: 20px;
 }
+
 .send-meassge-boder {
     position: absolute;
     bottom: 55px;
+}
+
+.on-scroll-teacher {
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.teacher-name p {
+    font-size: 14px !important;
 }
 
 @media (max-width:1220px) {
@@ -1789,9 +1804,36 @@ video {
     .lesson-images {
         display: none !important;
     }
+
+    .on-scroll-teacher {
+        height: 80vh;
+        overflow-y: scroll;
+    }
+
+    .teacher-name img {
+        width: 15% !important;
+    }
+
+    .teacher-name p {
+        font-size: 25px !important;
+    }
 }
 
 @media (max-width:600px) {
+    .watari {
+        font-size: 18px;
+        width: 165px;
+        padding: 10px 0;
+    }
+
+    .teacher-name p {
+        font-size: 16px !important;
+    }
+
+    .teacher-name span {
+        font-size: 12px !important;
+    }
+
     .book-image-dashboard-2 {
         width: 100px;
     }
