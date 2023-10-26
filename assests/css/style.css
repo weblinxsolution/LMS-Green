@@ -1623,6 +1623,16 @@ video {
 .teacher-name p {
     font-size: 14px !important;
 }
+.active-now::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #44D400;
+    left: 65px;
+    top: 11%;
+}
 
 @media (max-width:1220px) {
     .level-id {
@@ -1820,6 +1830,13 @@ video {
 }
 
 @media (max-width:600px) {
+    .send-message-input-area-2 {
+        width: 80%;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .watari {
         font-size: 18px;
         width: 165px;
