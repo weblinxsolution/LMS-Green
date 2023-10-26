@@ -1584,7 +1584,7 @@ video {
     height: 80vh;
     overflow-y: scroll;
     padding: 0 1rem;
-    padding-bottom: 40%;
+    padding-bottom: 50%;
     /* background-color: #1a520040; */
     /* position: relative; */
 }
