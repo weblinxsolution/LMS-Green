@@ -1640,8 +1640,11 @@ video {
     left: 65px;
     top: 11%;
 }
-
-@media (max-width:1220px) {
+.level-id{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+@media (max-width:1336px) {
     .level-id {
         font-size: 16px;
     }
@@ -1844,8 +1847,8 @@ video {
 
     /* width */
     ::-webkit-scrollbar {
-        width: 4px;
-        height: 4px;
+        width: 0;
+        height: 0;
     }
 
 
