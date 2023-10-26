@@ -789,7 +789,7 @@ input:focus-visible {
 }
 
 /* check */
-.form-check-input:checked::before {}
+
 
 .re-check-mark .asphalte input {
     padding: 5px;
@@ -1584,7 +1584,7 @@ video {
     height: 80vh;
     overflow-y: scroll;
     padding: 0 5px;
-    padding-bottom: 50%;
+    padding-bottom: 10%;
     /* background-color: #1a520040; */
     /* position: relative; */
 }
@@ -1935,6 +1935,14 @@ video {
 }
 
 @media (max-width:600px) {
+    .chat-history-chat {
+        height: 80vh;
+        overflow-y: scroll;
+        padding: 0 5px;
+        padding-bottom: 50%;
+        /* background-color: #1a520040; */
+        /* position: relative; */
+    }
     .missed-lesson {
         padding: 3rem 1rem;
     }
