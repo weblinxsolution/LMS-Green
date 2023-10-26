@@ -1624,7 +1624,8 @@ video {
 .teacher-name p {
     font-size: 14px !important;
 }
-.active-now::before{
+
+.active-now::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -1761,9 +1762,10 @@ video {
 }
 
 @media (max-width:991px) {
-    .on-mobile-chat-area{
+    .on-mobile-chat-area {
         padding-top: 1%;
     }
+
     .last-section-bg .dashboard-table {
 
         width: max-content;
@@ -1834,9 +1836,18 @@ video {
 }
 
 @media (max-width:600px) {
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+
     .teacher-name img {
         width: 20% !important;
     }
+
     .send-message-input-area-2 {
         width: 80%;
         bottom: 5%;
@@ -1946,6 +1957,7 @@ video {
         /* background-color: #1a520040; */
         /* position: relative; */
     }
+
     .missed-lesson {
         padding: 3rem 1rem;
     }
