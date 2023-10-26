@@ -913,9 +913,14 @@ input:focus-visible {
     color: #FFF;
     font-weight: 600;
 }
-
-.lefts-menus .activator i {
-    color: #FFF;
+.lefts-menus path{
+    stroke: #091C00;
+} 
+.bottom-menu-logout path{
+    stroke: #091C00;
+}
+.lefts-menus .activator path {
+    stroke: #FFF;
 }
 
 .fw-regular {
