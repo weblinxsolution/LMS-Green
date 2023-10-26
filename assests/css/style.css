@@ -9,28 +9,30 @@ body {
     font-family: 'Poppins', sans-serif;
 
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #45D700; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #45D700;
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #33a200; 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #33a200;
+}
+
 h1 {
     font-size: 40px;
     font-weight: 900;
@@ -1514,12 +1516,14 @@ video {
 .view-history-text:hover {
     color: #44D400 !important;
 }
-.todays{
+
+.todays {
     text-align: center;
     position: relative;
 
 }
-.todays::before{
+
+.todays::before {
     content: "";
     width: 40%;
     height: 1px;
@@ -1528,7 +1532,8 @@ video {
     left: 0;
     top: 10px;
 }
-.todays::after{
+
+.todays::after {
     content: "";
     width: 40%;
     height: 1px;
@@ -1537,14 +1542,17 @@ video {
     right: 0;
     top: 10px;
 }
-.my-chats{
+
+.my-chats {
     display: flex;
     justify-content: end;
 }
-.teacher-chat-inner{
+
+.teacher-chat-inner {
     justify-content: flex-start;
 }
-.my-chats p{
+
+.my-chats p {
     background-color: #45D700;
     border-radius: 25px;
     padding: 1rem;
@@ -1554,7 +1562,8 @@ video {
     align-items: center;
     justify-content: center;
 }
-.teacher-chat-inner p{
+
+.teacher-chat-inner p {
     background-color: #EFEFEF;
     border-radius: 25px;
     padding: 1rem;
@@ -1564,11 +1573,42 @@ video {
     align-items: center;
     justify-content: center;
 }
-.chat-history-chat{
+.form-control:focus{
+    box-shadow: none;
+    /* border: none; */
+    border-color: #E6E6E6;
+}
+.chat-history-chat {
     height: 80vh;
     overflow-y: scroll;
     padding: 0 1rem;
+    /* background-color: #1a520040; */
+    /* position: relative; */
 }
+.send-message-input-area{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.send-message-input-area input{
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.send-message-input-area button{
+    background-color: #F9F9F9;
+    border-right: 1px solid #E6E6E6;
+    border-left: 0 solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    border-radius: 20px;
+}
+.send-meassge-boder {
+    position: absolute;
+    bottom: 55px;
+}
+
 @media (max-width:1220px) {
     .level-id {
         font-size: 16px;
