@@ -1834,6 +1834,9 @@ video {
 }
 
 @media (max-width:600px) {
+    .teacher-name img {
+        width: 20% !important;
+    }
     .send-message-input-area-2 {
         width: 80%;
         bottom: 5%;
