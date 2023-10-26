@@ -1583,7 +1583,7 @@ video {
 .chat-history-chat {
     height: 80vh;
     overflow-y: scroll;
-    padding: 0 1rem;
+    padding: 0 5px;
     padding-bottom: 50%;
     /* background-color: #1a520040; */
     /* position: relative; */
