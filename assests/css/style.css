@@ -1584,6 +1584,7 @@ video {
     height: 80vh;
     overflow-y: scroll;
     padding: 0 1rem;
+    padding-bottom: 40%;
     /* background-color: #1a520040; */
     /* position: relative; */
 }
@@ -1760,6 +1761,9 @@ video {
 }
 
 @media (max-width:991px) {
+    .on-mobile-chat-area{
+        padding-top: 1%;
+    }
     .last-section-bg .dashboard-table {
 
         width: max-content;
