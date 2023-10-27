@@ -364,7 +364,7 @@ td {
     background-image: url("../images/home-banner-background.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 15rem;
+    padding-bottom: 7%;
 }
 
 .about-button button {
@@ -1653,7 +1653,7 @@ video {
     border-radius: 15px;
     background: #FFF;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .section-2-text-1 {
