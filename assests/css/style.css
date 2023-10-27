@@ -342,7 +342,7 @@ td {
 }
 
 .fs-21 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .boy-bottom {
@@ -913,12 +913,15 @@ input:focus-visible {
     color: #FFF;
     font-weight: 600;
 }
-.lefts-menus path{
-    stroke: #091C00;
-} 
-.bottom-menu-logout path{
+
+.lefts-menus path {
     stroke: #091C00;
 }
+
+.bottom-menu-logout path {
+    stroke: #091C00;
+}
+
 .lefts-menus .activator path {
     stroke: #FFF;
 }
@@ -1640,10 +1643,61 @@ video {
     left: 65px;
     top: 11%;
 }
-.level-id{
+
+.level-id {
     font-size: 16px !important;
     font-weight: 600 !important;
 }
+
+.about-us-bg-white {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    padding: 1rem;
+}
+
+.section-2-text-1 {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.crust-margin {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.white-toxic-bg {
+    background-color: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem 1rem 1rem;
+    border-radius: 10px;
+}
+
+.course-intro-bg {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-intro-bg .people-image-communacation {
+    width: 200px;
+}
+
+.course-intro-bg .people-image-communacation img {
+    margin-bottom: -1rem;
+    z-index: 2;
+    position: relative;
+}
+
+
+
 @media (max-width:1336px) {
     .level-id {
         font-size: 16px;
