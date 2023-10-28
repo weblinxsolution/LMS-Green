@@ -1721,6 +1721,22 @@ video {
     z-index: 1;
 }
 
+.lets-study-image {
+    width: 50%;
+}
+
+.section-1 {
+    margin-top: -7rem;
+}
+
+.border-green-background {
+    background-image: url("/assests/images/new-index-banner.png");
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 13%;
+    background-repeat: no-repeat;
+}
+
 @media (max-width:1336px) {
     .section-2-text-1 {
         width: 600px;
