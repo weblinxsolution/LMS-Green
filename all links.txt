@@ -13,3 +13,23 @@ https://lms-green.netlify.app/redeem-products
 https://lms-green.netlify.app/student-wonder
 https://lms-green.netlify.app/teacher-review
 https://lms-green.netlify.app/vocabulary
+
+
+courses > teacher name,course,subject,total sessions, left sessions ,date,time,button > live
+
+session > teacher name, course name,subject,time,date,button > end session aur review.
+
+Lesson:[
+upcoming lession > subject,lesson name,date,button>view
+lession history > subject,lesson name,date,button>view]
+
+review > teacher,course,subject,session,review,date.
+
+
+Vocablary >
+
+order > product
+
+download E-book >
+
+Trasaction > course,category,date,expiry

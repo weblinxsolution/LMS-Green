@@ -877,7 +877,7 @@ input:focus-visible {
 }
 
 .nitro {
-    height: 55vh;
+    height: 100vh;
 }
 
 .lefts-menus p {
@@ -1239,9 +1239,11 @@ input:focus-visible {
     background-color: #AAFF83;
     color: #000;
     overflow: hidden;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
-
+.cursor{
+    cursor: pointer;
+}
 .chat-box-divider img {
     width: 100%;
     height: 100%;
@@ -1751,6 +1753,29 @@ video {
 
 .light-dark-text {
     color: #46AA52;
+}
+.live-btn button{
+    background-color: #44D400;
+    color: #FFF;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 10px;
+}
+.review-btn button:nth-child(1){
+    border: 1px solid rgb(255, 99, 99);
+    background-color: rgb(255, 99, 99);
+    color: #FFF;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.review-btn button:nth-child(2){
+    border: 1px solid #44D400;
+    border-radius: 5px;
+    background-color: #44D400;
+    color: #FFF;
+    padding: 5px 5px;
+    font-weight: 500;
 }
 
 @media (max-width:1920px) {

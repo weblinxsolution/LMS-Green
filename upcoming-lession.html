@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+        integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA  +058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- css file -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+
+    <title>LMS - upcoming-lesson</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="globle-header">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="./assests/images/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center mobile-res">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                        <div class="d-lg-flex  mx-lg-4 gap-1">
+                            <li>
+                                <a href="#" class="d-flex align-items-center sapce-header">My Account
+                                    <span>
+                                        <img src="./assests/images/Myaccount-logo.svg" class="myaccount-logo" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+    </div>
+
+    <!-- DASHBOARD BODY -->
+    <section class="flashy-card mt-4">
+        <div class="wrapper">
+            <div class="row">
+                <!-- on mobile canvas -->
+                <div class="d-xl-none d-block">
+                    <a class="mobile-left-bar-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <div class="d-flex gap-2 watari">
+                            <i class="ri-layout-grid-fill"></i>Dashboard
+                        </div>
+                    </a>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="main-left-section-1">
+                                <div class="d-xl-flex flex-row  align-items-center gap-2 ps-4">
+                                    <div class="db-profile-left mb-xl-0 mb-3">
+                                        <img src="./assests/images/dashboard-user-1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="m-0 title-name">
+                                            Student Name
+                                        </p>
+                                        <p class="m-0 level-name">
+                                            Level <span class="fw-bolder">04</span>
+                                        </p>
+                                        <p class="m-0 level-id">
+                                            Student ID 1234856
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="border-using-image">
+                                    <img src="./assests/images/dashboard-user-2.png" alt="">
+                                </div>
+                                <div class="d-flex flex-column justify-content-between nitro mt-5">
+                                    <div class="lefts-menus d-flex flex-column gap-5">
+                                        <div class="">
+                                            <div class="d-flex align-items-center ps-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                                    viewBox="0 0 38 38" fill="none">
+                                                    <path
+                                                        d="M36 19.3466V21.9325C36 28.5639 36 31.8797 34.0083 33.9398C32.0167 36 28.811 36 22.4 36H15.6C9.18889 36 5.98336 36 3.99167 33.9398C2 31.8797 2 28.5639 2 21.9325V19.3466C2 15.4563 2 13.5112 2.88264 11.8987C3.76528 10.2862 5.37781 9.28537 8.60285 7.28382L12.0029 5.17368C15.412 3.05789 17.1166 2 19 2C20.8834 2 22.588 3.05789 25.9972 5.17368L29.3972 7.2838C32.6223 9.28537 34.2347 10.2862 35.1174 11.8987"
+                                                        stroke="white" stroke-width="3.75" stroke-linecap="round" />
+                                                    <path d="M24.1004 29.2H13.9004" stroke="white" stroke-width="3.75"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                                <p class="m-0 ps-3">Dashboard</p>
+                                            </div>
+                                        </div>
+                                        <div class="activator">
+                                            <div class="d-flex align-items-center ps-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="37"
+                                                    viewBox="0 0 31 37" fill="none">
+                                                    <path
+                                                        d="M28.2314 25.1H8.43134C6.89689 25.1 6.12965 25.1 5.50018 25.2686C3.79197 25.7263 2.45771 27.0607 2 28.7688"
+                                                        stroke-width="3.75" />
+                                                    <path d="M6.94922 25.1V2.825" stroke-width="3.75"
+                                                        stroke-linecap="round" />
+                                                    <path
+                                                        d="M11.9 35C7.23309 35 4.89964 35 3.44982 33.5501C2 32.1003 2 29.7669 2 25.1V11.9C2 7.23309 2 4.89964 3.44982 3.44982C4.89964 2 7.23309 2 11.9 2H18.5C23.1669 2 25.5003 2 26.9501 3.44982C28.4 4.89964 28.4 7.23309 28.4 11.9M18.5 35C23.1669 35 25.5003 35 26.9501 33.5501C28.4 32.1003 28.4 29.7669 28.4 25.1V18.5"
+                                                        stroke-width="3.75" stroke-linecap="round" />
+                                                </svg>
+                                                <p class="m-0 ps-4">Courses</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="d-flex align-items-center ps-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
+                                                    viewBox="0 0 36 38" fill="none">
+                                                    <path
+                                                        d="M14.6853 2.90247L4.45893 9.57852C1.18036 11.7189 1.18036 16.5094 4.45893 18.6498L14.6853 25.3259C16.5199 26.532 19.5437 26.532 21.3783 25.3259L31.5538 18.6498C34.8154 16.5094 34.8154 11.7359 31.5538 9.59551L21.3783 2.91946C19.5437 1.69636 16.5199 1.69636 14.6853 2.90247Z"
+                                                        stroke-width="3.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path opacity="0.6"
+                                                        d="M7.17519 20.8247L7.1582 28.7918C7.1582 30.9492 8.82297 33.2595 10.8615 33.939L16.2804 35.7397C17.2147 36.0455 18.7605 36.0455 19.7118 35.7397L25.1308 33.939C27.1693 33.2595 28.8341 30.9492 28.8341 28.7918V20.9097"
+                                                        stroke-width="3.75" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path opacity="0.6" d="M33.9688 24.0861V13.8937" stroke-width="3.75"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <p class="m-0 ps-3">Teachers</p>
+                                            </div>
+                                        </div>
+                                        <a href="chat.html" class="cursor">
+                                            <div class="">
+                                                <div class="d-flex align-items-center ps-4">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33"
+                                                        viewBox="0 0 33 33" fill="none">
+                                                        <path
+                                                            d="M23.75 3.93984C21.6172 2.70611 19.141 2 16.5 2C8.49187 2 2 8.49187 2 16.5C2 18.8196 2.54465 21.0118 3.51302 22.9561C3.77036 23.4728 3.85601 24.0633 3.70682 24.6209L2.84319 27.8487C2.46828 29.2499 3.75016 30.5317 5.15136 30.1568L8.37912 29.2932C8.9367 29.144 9.52726 29.2297 10.0439 29.4869C11.9881 30.4554 14.1804 31 16.5 31C24.5081 31 31 24.5081 31 16.5C31 13.859 30.2939 11.3828 29.0602 9.25"
+                                                            stroke-width="3.75" stroke-linecap="round" />
+                                                    </svg>
+                                                    <p class="m-0 ps-4">Chat</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="bottom-menu-logout">
+                                        <div class="d-flex align-items-center ps-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="33"
+                                                viewBox="0 0 30 33" fill="none">
+                                                <path
+                                                    d="M19.4027 16.5013H6.35156M6.35156 16.5013L9.25181 19.4015M6.35156 16.5013L9.25181 13.601"
+                                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M15.0519 30.9774C12.7992 30.9095 11.4555 30.6582 10.5256 29.7282C9.41133 28.614 9.27147 26.9059 9.25391 23.7518M20.8524 31C24.0064 30.9825 25.7145 30.8425 26.8288 29.7282C28.103 28.454 28.103 26.4033 28.103 22.3017V19.4015V13.601V10.7007C28.103 6.59917 28.103 4.54839 26.8288 3.27419C25.5546 2 23.5038 2 19.4023 2H17.9522C13.8505 2 11.7998 2 10.5256 3.27419C9.41133 4.38844 9.27147 6.09655 9.25391 9.25062"
+                                                    stroke-width="3" stroke-linecap="round" />
+                                                <path
+                                                    d="M2 12.8759V20.1265C2 23.5445 2 25.2534 3.06182 26.3154C4.12366 27.3772 5.83265 27.3772 9.25062 27.3772M3.06182 6.68713C4.12366 5.62531 5.83265 5.62531 9.25062 5.62531"
+                                                    stroke-width="3" stroke-linecap="round" />
+                                            </svg>
+                                            <p class="m-0 ps-4">
+                                                Logout
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- left section menu -->
+                <div class="col-xl-3 col-4 d-xl-block d-none">
+                    <div class="main-left-section">
+                        <div class="d-xl-flex flex-row  align-items-center ps-4">
+                            <div class="db-profile-left mb-xl-0 mb-3">
+                                <img src="./assests/images/dashboard-user-1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="m-0 title-name">
+                                    Student Name
+                                </p>
+                                <p class="m-0 level-name">
+                                    Level <span class="fw-bolder">04</span>
+                                </p>
+                                <p class="m-0 level-id">
+                                    Student ID 1234856
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="border-using-image">
+                            <img src="./assests/images/dashboard-user-2.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between nitro mt-5">
+                            <div class="lefts-menus d-flex flex-column gap-4">
+                                <a href="dashboard-01.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                                viewBox="0 0 38 38" fill="none">
+                                                <path
+                                                    d="M36 19.3466V21.9325C36 28.5639 36 31.8797 34.0083 33.9398C32.0167 36 28.811 36 22.4 36H15.6C9.18889 36 5.98336 36 3.99167 33.9398C2 31.8797 2 28.5639 2 21.9325V19.3466C2 15.4563 2 13.5112 2.88264 11.8987C3.76528 10.2862 5.37781 9.28537 8.60285 7.28382L12.0029 5.17368C15.412 3.05789 17.1166 2 19 2C20.8834 2 22.588 3.05789 25.9972 5.17368L29.3972 7.2838C32.6223 9.28537 34.2347 10.2862 35.1174 11.8987"
+                                                    stroke="white" stroke-width="3.75" stroke-linecap="round" />
+                                                <path d="M24.1004 29.2H13.9004" stroke-width="3.75"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                            <p class="m-0 ps-3">Dashboard</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="courses.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="37"
+                                                viewBox="0 0 31 37" fill="none">
+                                                <path
+                                                    d="M28.2314 25.1H8.43134C6.89689 25.1 6.12965 25.1 5.50018 25.2686C3.79197 25.7263 2.45771 27.0607 2 28.7688"
+                                                    stroke-width="3.75" />
+                                                <path d="M6.94922 25.1V2.825" stroke-width="3.75"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M11.9 35C7.23309 35 4.89964 35 3.44982 33.5501C2 32.1003 2 29.7669 2 25.1V11.9C2 7.23309 2 4.89964 3.44982 3.44982C4.89964 2 7.23309 2 11.9 2H18.5C23.1669 2 25.5003 2 26.9501 3.44982C28.4 4.89964 28.4 7.23309 28.4 11.9M18.5 35C23.1669 35 25.5003 35 26.9501 33.5501C28.4 32.1003 28.4 29.7669 28.4 25.1V18.5"
+                                                    stroke-width="3.75" stroke-linecap="round" />
+                                            </svg>
+                                            <p class="m-0 ps-4">Courses</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="sessions.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="37"
+                                                viewBox="0 0 31 37" fill="none">
+                                                <path
+                                                    d="M28.2314 25.1H8.43134C6.89689 25.1 6.12965 25.1 5.50018 25.2686C3.79197 25.7263 2.45771 27.0607 2 28.7688"
+                                                    stroke-width="3.75" />
+                                                <path d="M6.94922 25.1V2.825" stroke-width="3.75"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M11.9 35C7.23309 35 4.89964 35 3.44982 33.5501C2 32.1003 2 29.7669 2 25.1V11.9C2 7.23309 2 4.89964 3.44982 3.44982C4.89964 2 7.23309 2 11.9 2H18.5C23.1669 2 25.5003 2 26.9501 3.44982C28.4 4.89964 28.4 7.23309 28.4 11.9M18.5 35C23.1669 35 25.5003 35 26.9501 33.5501C28.4 32.1003 28.4 29.7669 28.4 25.1V18.5"
+                                                    stroke-width="3.75" stroke-linecap="round" />
+                                            </svg>
+                                            <p class="m-0 ps-4">Session</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="activator">
+                                    <div class="d-flex align-items-center ps-4 custom_drop cursor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="37"
+                                            viewBox="0 0 31 37" fill="none">
+                                            <path
+                                                d="M28.2314 25.1H8.43134C6.89689 25.1 6.12965 25.1 5.50018 25.2686C3.79197 25.7263 2.45771 27.0607 2 28.7688"
+                                                stroke-width="3.75" />
+                                            <path d="M6.94922 25.1V2.825" stroke-width="3.75" stroke-linecap="round" />
+                                            <path
+                                                d="M11.9 35C7.23309 35 4.89964 35 3.44982 33.5501C2 32.1003 2 29.7669 2 25.1V11.9C2 7.23309 2 4.89964 3.44982 3.44982C4.89964 2 7.23309 2 11.9 2H18.5C23.1669 2 25.5003 2 26.9501 3.44982C28.4 4.89964 28.4 7.23309 28.4 11.9M18.5 35C23.1669 35 25.5003 35 26.9501 33.5501C28.4 32.1003 28.4 29.7669 28.4 25.1V18.5"
+                                                stroke-width="3.75" stroke-linecap="round" />
+                                        </svg>
+                                        <p class="m-0 ps-4">Lesson</p>
+                                    </div>
+                                    <div class="ps-4" style="display: none;">
+                                        <a href="upcoming-lession.html">
+                                            <p class="m-0 ps-4 mb-2 mt-4 cursor">Upcoming lession</p>
+                                        </a>
+                                        <a href="lesson-history.html">
+                                            <p class="m-0 ps-4 cursor mt-4">Lession history</p>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                                <a href="teacher-review.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
+                                                viewBox="0 0 36 38" fill="none">
+                                                <path
+                                                    d="M14.6853 2.90247L4.45893 9.57852C1.18036 11.7189 1.18036 16.5094 4.45893 18.6498L14.6853 25.3259C16.5199 26.532 19.5437 26.532 21.3783 25.3259L31.5538 18.6498C34.8154 16.5094 34.8154 11.7359 31.5538 9.59551L21.3783 2.91946C19.5437 1.69636 16.5199 1.69636 14.6853 2.90247Z"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6"
+                                                    d="M7.17519 20.8247L7.1582 28.7918C7.1582 30.9492 8.82297 33.2595 10.8615 33.939L16.2804 35.7397C17.2147 36.0455 18.7605 36.0455 19.7118 35.7397L25.1308 33.939C27.1693 33.2595 28.8341 30.9492 28.8341 28.7918V20.9097"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6" d="M33.9688 24.0861V13.8937" stroke-width="3.75"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="m-0 ps-3">Teachers</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="review.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
+                                                viewBox="0 0 36 38" fill="none">
+                                                <path
+                                                    d="M14.6853 2.90247L4.45893 9.57852C1.18036 11.7189 1.18036 16.5094 4.45893 18.6498L14.6853 25.3259C16.5199 26.532 19.5437 26.532 21.3783 25.3259L31.5538 18.6498C34.8154 16.5094 34.8154 11.7359 31.5538 9.59551L21.3783 2.91946C19.5437 1.69636 16.5199 1.69636 14.6853 2.90247Z"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6"
+                                                    d="M7.17519 20.8247L7.1582 28.7918C7.1582 30.9492 8.82297 33.2595 10.8615 33.939L16.2804 35.7397C17.2147 36.0455 18.7605 36.0455 19.7118 35.7397L25.1308 33.939C27.1693 33.2595 28.8341 30.9492 28.8341 28.7918V20.9097"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6" d="M33.9688 24.0861V13.8937" stroke-width="3.75"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="m-0 ps-3">Review</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="vocabulary.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
+                                                viewBox="0 0 36 38" fill="none">
+                                                <path
+                                                    d="M14.6853 2.90247L4.45893 9.57852C1.18036 11.7189 1.18036 16.5094 4.45893 18.6498L14.6853 25.3259C16.5199 26.532 19.5437 26.532 21.3783 25.3259L31.5538 18.6498C34.8154 16.5094 34.8154 11.7359 31.5538 9.59551L21.3783 2.91946C19.5437 1.69636 16.5199 1.69636 14.6853 2.90247Z"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6"
+                                                    d="M7.17519 20.8247L7.1582 28.7918C7.1582 30.9492 8.82297 33.2595 10.8615 33.939L16.2804 35.7397C17.2147 36.0455 18.7605 36.0455 19.7118 35.7397L25.1308 33.939C27.1693 33.2595 28.8341 30.9492 28.8341 28.7918V20.9097"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6" d="M33.9688 24.0861V13.8937" stroke-width="3.75"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="m-0 ps-3">Vocabulary</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="orders.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
+                                                viewBox="0 0 36 38" fill="none">
+                                                <path
+                                                    d="M14.6853 2.90247L4.45893 9.57852C1.18036 11.7189 1.18036 16.5094 4.45893 18.6498L14.6853 25.3259C16.5199 26.532 19.5437 26.532 21.3783 25.3259L31.5538 18.6498C34.8154 16.5094 34.8154 11.7359 31.5538 9.59551L21.3783 2.91946C19.5437 1.69636 16.5199 1.69636 14.6853 2.90247Z"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6"
+                                                    d="M7.17519 20.8247L7.1582 28.7918C7.1582 30.9492 8.82297 33.2595 10.8615 33.939L16.2804 35.7397C17.2147 36.0455 18.7605 36.0455 19.7118 35.7397L25.1308 33.939C27.1693 33.2595 28.8341 30.9492 28.8341 28.7918V20.9097"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6" d="M33.9688 24.0861V13.8937" stroke-width="3.75"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="m-0 ps-3">Orders</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="download-Book.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
+                                                viewBox="0 0 36 38" fill="none">
+                                                <path
+                                                    d="M14.6853 2.90247L4.45893 9.57852C1.18036 11.7189 1.18036 16.5094 4.45893 18.6498L14.6853 25.3259C16.5199 26.532 19.5437 26.532 21.3783 25.3259L31.5538 18.6498C34.8154 16.5094 34.8154 11.7359 31.5538 9.59551L21.3783 2.91946C19.5437 1.69636 16.5199 1.69636 14.6853 2.90247Z"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6"
+                                                    d="M7.17519 20.8247L7.1582 28.7918C7.1582 30.9492 8.82297 33.2595 10.8615 33.939L16.2804 35.7397C17.2147 36.0455 18.7605 36.0455 19.7118 35.7397L25.1308 33.939C27.1693 33.2595 28.8341 30.9492 28.8341 28.7918V20.9097"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6" d="M33.9688 24.0861V13.8937" stroke-width="3.75"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="m-0 ps-3">Downloads</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="transaction.html">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4 cursor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
+                                                viewBox="0 0 36 38" fill="none">
+                                                <path
+                                                    d="M14.6853 2.90247L4.45893 9.57852C1.18036 11.7189 1.18036 16.5094 4.45893 18.6498L14.6853 25.3259C16.5199 26.532 19.5437 26.532 21.3783 25.3259L31.5538 18.6498C34.8154 16.5094 34.8154 11.7359 31.5538 9.59551L21.3783 2.91946C19.5437 1.69636 16.5199 1.69636 14.6853 2.90247Z"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6"
+                                                    d="M7.17519 20.8247L7.1582 28.7918C7.1582 30.9492 8.82297 33.2595 10.8615 33.939L16.2804 35.7397C17.2147 36.0455 18.7605 36.0455 19.7118 35.7397L25.1308 33.939C27.1693 33.2595 28.8341 30.9492 28.8341 28.7918V20.9097"
+                                                    stroke-width="3.75" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path opacity="0.6" d="M33.9688 24.0861V13.8937" stroke-width="3.75"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="m-0 ps-3">Transaction</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="chat.html" class="cursor">
+                                    <div class="">
+                                        <div class="d-flex align-items-center ps-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33"
+                                                viewBox="0 0 33 33" fill="none">
+                                                <path
+                                                    d="M23.75 3.93984C21.6172 2.70611 19.141 2 16.5 2C8.49187 2 2 8.49187 2 16.5C2 18.8196 2.54465 21.0118 3.51302 22.9561C3.77036 23.4728 3.85601 24.0633 3.70682 24.6209L2.84319 27.8487C2.46828 29.2499 3.75016 30.5317 5.15136 30.1568L8.37912 29.2932C8.9367 29.144 9.52726 29.2297 10.0439 29.4869C11.9881 30.4554 14.1804 31 16.5 31C24.5081 31 31 24.5081 31 16.5C31 13.859 30.2939 11.3828 29.0602 9.25"
+                                                    stroke-width="3.75" stroke-linecap="round" />
+                                            </svg>
+                                            <p class="m-0 ps-4">Chat</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="">
+                                <div class="bottom-menu-logout">
+                                    <div class="d-flex align-items-center ps-4 cursor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="33"
+                                            viewBox="0 0 30 33" fill="none">
+                                            <path
+                                                d="M19.4027 16.5013H6.35156M6.35156 16.5013L9.25181 19.4015M6.35156 16.5013L9.25181 13.601"
+                                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M15.0519 30.9774C12.7992 30.9095 11.4555 30.6582 10.5256 29.7282C9.41133 28.614 9.27147 26.9059 9.25391 23.7518M20.8524 31C24.0064 30.9825 25.7145 30.8425 26.8288 29.7282C28.103 28.454 28.103 26.4033 28.103 22.3017V19.4015V13.601V10.7007C28.103 6.59917 28.103 4.54839 26.8288 3.27419C25.5546 2 23.5038 2 19.4023 2H17.9522C13.8505 2 11.7998 2 10.5256 3.27419C9.41133 4.38844 9.27147 6.09655 9.25391 9.25062"
+                                                stroke-width="3" stroke-linecap="round" />
+                                            <path
+                                                d="M2 12.8759V20.1265C2 23.5445 2 25.2534 3.06182 26.3154C4.12366 27.3772 5.83265 27.3772 9.25062 27.3772M3.06182 6.68713C4.12366 5.62531 5.83265 5.62531 9.25062 5.62531"
+                                                stroke-width="3" stroke-linecap="round" />
+                                        </svg>
+                                        <p class="m-0 ps-4">
+                                            Logout
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Section -->
+                <div class="col-xl-9 col-12">
+                    <div class="row justify-content-between mt-xl-0 mt-4">
+                        <div class="hello-std-bg-5  row mx-0 align-items-center justify-content-between">
+                            <div class="last-section-bg">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="lms-heading-recent">
+                                        <p class="m-0 fw-bold fs-3">
+                                            Upcoming Lessons
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <img src="./assests/images/dashboard-user-2.png" alt="">
+                                </div>
+                                <!-- Table -->
+                                <div class="my-profile-input-area">
+                                    <div class="dashboard-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Lesson Name</th>
+                                                    <th>Date</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    
+                                                    <td>
+                                                        Digital Marketnig
+                                                    </td>
+                                                    <td>
+                                                        Lead Generation
+                                                    </td>
+
+                                                    <td>
+                                                        1/11/2023
+                                                    </td>
+
+                                                    <td>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                        viewBox="0 0 50 50" fill="none">
+                                                        <rect width="50" height="50" rx="10" fill="#44D500" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2003 19.4286C22.1233 19.4286 19.6289 21.923 19.6289 25C19.6289 28.0771 22.1233 30.5714 25.2003 30.5714C28.2774 30.5714 30.7718 28.0771 30.7718 25C30.7718 21.923 28.2774 19.4286 25.2003 19.4286ZM21.8575 25C21.8575 23.1539 23.3542 21.6571 25.2003 21.6571C27.0465 21.6571 28.5432 23.1539 28.5432 25C28.5432 26.8462 27.0465 28.3429 25.2003 28.3429C23.3542 28.3429 21.8575 26.8462 21.8575 25Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M25.2019 12C18.4952 12 13.9778 16.0177 11.3559 19.4239L11.3086 19.4853C10.7156 20.2554 10.1695 20.9647 9.79904 21.8033C9.40228 22.7015 9.23047 23.6802 9.23047 25C9.23047 26.3198 9.40228 27.2985 9.79904 28.1967C10.1695 29.0353 10.7156 29.7446 11.3086 30.5147L11.3559 30.576C13.9778 33.9823 18.4952 38 25.2019 38C31.9086 38 36.426 33.9823 39.0479 30.576L39.0951 30.5147C39.6882 29.7446 40.2342 29.0353 40.6047 28.1967C41.0016 27.2985 41.1733 26.3198 41.1733 25C41.1733 23.6802 41.0016 22.7015 40.6047 21.8033C40.2342 20.9647 39.6882 20.2554 39.0951 19.4853L39.0479 19.4239C36.426 16.0177 31.9086 12 25.2019 12ZM13.1219 20.7832C15.5427 17.6382 19.4824 14.2286 25.2019 14.2286C30.9213 14.2286 34.8611 17.6382 37.2819 20.7832C37.9336 21.6298 38.3153 22.1357 38.5662 22.7038C38.8009 23.235 38.9448 23.8841 38.9448 25C38.9448 26.1159 38.8009 26.765 38.5662 27.2962C38.3153 27.8643 37.9336 28.3702 37.2819 29.2168C34.8611 32.3619 30.9213 35.7714 25.2019 35.7714C19.4824 35.7714 15.5427 32.3619 13.1219 29.2168C12.4703 28.3702 12.0886 27.8643 11.8375 27.2962C11.6029 26.765 11.459 26.1159 11.459 25C11.459 23.8841 11.6029 23.235 11.8375 22.7038C12.0886 22.1357 12.4703 21.6298 13.1219 20.7832Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- Add Vocabulary Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content vocab">
+                                            <div class="modal-header">
+                                                <p class="modal-title fs-4" id="exampleModalLabel">Add Vocabulary</p>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    <input type="text" placeholder="Enter Word" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mt-4">
+                                                    <textarea class="form-control" placeholder="Description" rows="5"
+                                                        id="floatingTextarea"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer Review-btn-green">
+                                                <button type="button" class="" data-bs-dismiss="modal">Add
+                                                    Vocabulary</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- edit Vocabulary Modal -->
+                                <div class="modal fade" id="exampleModal-1" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content vocab">
+                                            <div class="modal-header">
+                                                <p class="modal-title fs-4" id="exampleModalLabel">Add Vocabulary</p>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    <input type="text" placeholder="Enter Word" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mt-4">
+                                                    <textarea class="form-control" placeholder="Description" rows="5"
+                                                        id="floatingTextarea"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer Review-btn-green">
+                                                <button type="button" class="" data-bs-dismiss="modal">Save</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-2">
+        <div class="footer-bg">
+            <div class="wrapper">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-3 d-flex flex-column gap-2">
+                        <div class="footer-logo">
+                            <img src="./assests/images/footer-logo.svg" alt="">
+                        </div>
+                        <div class="footer-socials-icons">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                    fill="none">
+                                    <path
+                                        d="M16.6111 0.00457742L13.7388 0C10.5119 0 8.42651 2.12507 8.42651 5.41417V7.91047H5.53855C5.289 7.91047 5.08691 8.11142 5.08691 8.35929V11.9761C5.08691 12.224 5.28923 12.4247 5.53855 12.4247H8.42651V21.5512C8.42651 21.7991 8.62859 21.9998 8.87815 21.9998H12.6461C12.8957 21.9998 13.0977 21.7988 13.0977 21.5512V12.4247H16.4744C16.724 12.4247 16.9261 12.224 16.9261 11.9761L16.9275 8.35929C16.9275 8.24027 16.8798 8.1263 16.7952 8.04207C16.7106 7.95785 16.5954 7.91047 16.4756 7.91047H13.0977V5.79433C13.0977 4.77723 13.3418 4.26089 14.6757 4.26089L16.6106 4.26021C16.8599 4.26021 17.062 4.05926 17.062 3.81162V0.453165C17.062 0.205755 16.8602 0.00503516 16.6111 0.00457742Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 19 18"
+                                    fill="none">
+                                    <path
+                                        d="M9.37451 2.45459C7.58484 2.45459 7.36023 2.46236 6.65732 2.49414C5.95579 2.52604 5.47693 2.63636 5.05793 2.79823C4.62451 2.96541 4.25686 3.18904 3.89058 3.553C3.52402 3.91682 3.29887 4.282 3.13001 4.71236C2.96663 5.12868 2.85543 5.60445 2.82386 6.301C2.79242 6.99918 2.78418 7.22241 2.78418 9.00004C2.78418 10.7777 2.79214 11.0001 2.82399 11.6983C2.85626 12.3951 2.96732 12.8707 3.13014 13.2869C3.29859 13.7174 3.52375 14.0826 3.89016 14.4464C4.25631 14.8105 4.62396 15.0347 5.05711 15.2019C5.47638 15.3637 5.95537 15.474 6.65677 15.5059C7.35968 15.5377 7.58415 15.5455 9.37369 15.5455C11.1635 15.5455 11.3874 15.5377 12.0903 15.5059C12.7919 15.474 13.2713 15.3637 13.6905 15.2019C14.1238 15.0347 14.4909 14.8105 14.8571 14.4464C15.2236 14.0826 15.4488 13.7174 15.6176 13.287C15.7796 12.8707 15.8908 12.3949 15.9238 11.6984C15.9554 11.0002 15.9636 10.7777 15.9636 9.00004C15.9636 7.22241 15.9554 6.99931 15.9238 6.30113C15.8908 5.60432 15.7796 5.12868 15.6176 4.7125C15.4488 4.282 15.2236 3.91682 14.8571 3.553C14.4905 3.18891 14.124 2.96527 13.6901 2.79823C13.27 2.63636 12.7909 2.52604 12.0894 2.49414C11.3865 2.46236 11.1627 2.45459 9.37245 2.45459H9.37451ZM8.78335 3.63413C8.95881 3.63386 9.15458 3.63413 9.37451 3.63413C11.134 3.63413 11.3425 3.64041 12.0373 3.67177C12.6798 3.70095 13.0285 3.80759 13.2608 3.89718C13.5684 4.01582 13.7876 4.15763 14.0181 4.38673C14.2488 4.61582 14.3915 4.834 14.5112 5.13945C14.6014 5.36991 14.7089 5.71627 14.7382 6.35445C14.7698 7.04445 14.7766 7.25172 14.7766 8.99854C14.7766 10.7454 14.7698 10.9526 14.7382 11.6426C14.7088 12.2808 14.6014 12.6272 14.5112 12.8576C14.3918 13.1631 14.2488 13.3806 14.0181 13.6095C13.7875 13.8386 13.5685 13.9804 13.2608 14.0991C13.0288 14.1891 12.6798 14.2954 12.0373 14.3246C11.3427 14.356 11.134 14.3628 9.37451 14.3628C7.6149 14.3628 7.40636 14.356 6.71169 14.3246C6.06919 14.2952 5.72048 14.1885 5.48805 14.0989C5.18053 13.9803 4.96087 13.8385 4.73022 13.6094C4.49958 13.3803 4.3568 13.1627 4.23709 12.8571C4.14689 12.6266 4.0394 12.2803 4.01015 11.6421C3.97858 10.9521 3.97226 10.7448 3.97226 8.9969C3.97226 7.249 3.97858 7.04282 4.01015 6.35282C4.03953 5.71463 4.14689 5.36827 4.23709 5.13754C4.35653 4.83209 4.49958 4.61391 4.73022 4.38482C4.96087 4.15573 5.18053 4.01391 5.48805 3.895C5.72034 3.805 6.06919 3.69863 6.71169 3.66932C7.3196 3.64204 7.55518 3.63386 8.78335 3.6325V3.63413ZM12.8921 4.72095C12.4555 4.72095 12.1013 5.07236 12.1013 5.50613C12.1013 5.93977 12.4555 6.29159 12.8921 6.29159C13.3287 6.29159 13.6829 5.93977 13.6829 5.50613C13.6829 5.0725 13.3287 4.72068 12.8921 4.72068V4.72095ZM9.37451 5.63868C7.50562 5.63868 5.99038 7.14372 5.99038 9.00004C5.99038 10.8564 7.50562 12.3607 9.37451 12.3607C11.2434 12.3607 12.7581 10.8564 12.7581 9.00004C12.7581 7.14372 11.2433 5.63868 9.37437 5.63868H9.37451ZM9.37451 6.81822C10.5876 6.81822 11.5711 7.795 11.5711 9.00004C11.5711 10.2049 10.5876 11.1819 9.37451 11.1819C8.1613 11.1819 7.17792 10.2049 7.17792 9.00004C7.17792 7.795 8.1613 6.81822 9.37451 6.81822Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_4_2775)">
+                                        <path
+                                            d="M7.59231 17.5272C15.8955 17.5272 20.4362 10.8121 20.4362 4.98901C20.4362 4.79827 20.4322 4.60841 20.4234 4.4194C21.3048 3.79737 22.0709 3.02114 22.6752 2.1375C21.8663 2.48846 20.9959 2.72473 20.0828 2.83126C21.0148 2.2857 21.7303 1.4227 22.0679 0.393898C21.1957 0.898646 20.2298 1.2655 19.2014 1.46356C18.3777 0.607024 17.2049 0.0712891 15.9064 0.0712891C13.4135 0.0712891 11.392 2.04478 11.392 4.47738C11.392 4.82318 11.4316 5.15954 11.509 5.48218C7.75724 5.29789 4.43043 3.54437 2.20395 0.878024C1.81627 1.52925 1.59273 2.28572 1.59273 3.09289C1.59273 4.62175 2.38968 5.97143 3.60156 6.76101C2.86095 6.73867 2.16523 6.5402 1.55714 6.20986C1.55648 6.22835 1.55648 6.24638 1.55648 6.26614C1.55648 8.40028 3.11249 10.1821 5.17802 10.5859C4.7987 10.6868 4.39961 10.741 3.9877 10.741C3.69727 10.741 3.41432 10.7131 3.13929 10.6615C3.71399 12.4124 5.38047 13.6866 7.35622 13.7222C5.8112 14.9043 3.86492 15.6084 1.74962 15.6084C1.3857 15.6084 1.02619 15.5882 0.672852 15.5474C2.67068 16.7975 5.04291 17.5269 7.59256 17.5269"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4_2775">
+                                            <rect width="22.1497" height="17.6" fill="white"
+                                                transform="translate(0.598633)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_4_2771)">
+                                        <path
+                                            d="M21.9127 17.3732C21.9602 17.3736 22.0074 17.3645 22.0511 17.3463C22.0949 17.3281 22.1344 17.3013 22.1672 17.2674C22.2 17.2336 22.2254 17.1935 22.2418 17.1496C22.2582 17.1058 22.2652 17.059 22.2625 17.0124C22.2625 16.7565 22.1055 16.6343 21.7835 16.6343H21.2632V17.9738H21.4589V17.3899H21.6994L21.7049 17.397L22.0781 17.9738H22.2873L21.8858 17.3768L21.9127 17.3732ZM21.6864 17.239H21.4594V16.7861H21.7471C21.8957 16.7861 22.065 16.81 22.065 17.0013C22.065 17.2213 21.8936 17.239 21.6852 17.239"
+                                            fill="white" />
+                                        <path
+                                            d="M16.8082 15.694H14.0331V11.42C14.0331 10.4008 14.0146 9.08882 12.5898 9.08882C11.1444 9.08882 10.9233 10.1993 10.9233 11.3458V15.6937H8.14822V6.90463H10.8123V8.10575H10.8496C11.1162 7.65744 11.5015 7.28864 11.9643 7.03863C12.4272 6.78861 12.9504 6.66675 13.4781 6.68602C16.2907 6.68602 16.8093 8.50546 16.8093 10.8724L16.8082 15.694ZM5.01703 5.70323C4.69852 5.70329 4.38714 5.61046 4.12228 5.43647C3.85742 5.26249 3.65098 5.01518 3.52904 4.7258C3.4071 4.43643 3.37514 4.11799 3.43722 3.81076C3.4993 3.50353 3.65263 3.2213 3.87781 2.99976C4.10299 2.77823 4.38991 2.62734 4.70229 2.56617C5.01466 2.50501 5.33846 2.53632 5.63275 2.65614C5.92703 2.77596 6.17858 2.97891 6.35558 3.23932C6.53258 3.49974 6.62709 3.80593 6.62715 4.11917C6.62719 4.32716 6.58556 4.53311 6.50467 4.72528C6.42377 4.91744 6.30519 5.09206 6.15568 5.23915C6.00617 5.38625 5.82865 5.50294 5.63328 5.58256C5.43791 5.66219 5.22851 5.70319 5.01703 5.70323V5.70323ZM6.40456 15.694H3.6266V6.90463H6.40456V15.694ZM18.1917 0.0012549H2.23214C1.8699 -0.00276533 1.52085 0.134812 1.2617 0.383756C1.00255 0.632699 0.854519 0.972641 0.850098 1.32888V17.0896C0.854367 17.446 1.00232 17.7861 1.26145 18.0353C1.52059 18.2845 1.86972 18.4224 2.23214 18.4186H18.1917C18.5548 18.4231 18.9049 18.2856 19.1651 18.0364C19.4252 17.7872 19.5742 17.4467 19.5792 17.0896V1.32775C19.574 0.970797 19.425 0.630469 19.1648 0.381531C18.9046 0.132594 18.5546 -0.00459043 18.1917 0.000117282"
+                                            fill="white" />
+                                        <path
+                                            d="M21.7106 16.0371C21.373 16.0403 21.0504 16.1749 20.8134 16.4113C20.5763 16.6478 20.4442 16.967 20.4458 17.2991C20.4474 17.6311 20.5827 17.949 20.822 18.1833C21.0614 18.4175 21.3853 18.549 21.7229 18.549C22.0606 18.549 22.3845 18.4175 22.6238 18.1833C22.8631 17.949 22.9984 17.6311 23 17.2991C23.0016 16.967 22.8695 16.6478 22.6325 16.4113C22.3954 16.1749 22.0728 16.0403 21.7352 16.0371H21.7106ZM21.7106 18.4052C21.4892 18.4088 21.2716 18.3478 21.0854 18.2298C20.8992 18.1118 20.7528 17.9422 20.6647 17.7424C20.5765 17.5426 20.5506 17.3215 20.5902 17.1072C20.6298 16.8929 20.7331 16.6949 20.8871 16.5384C21.0411 16.3818 21.2388 16.2736 21.4553 16.2276C21.6717 16.1816 21.8973 16.1997 22.1033 16.2797C22.3093 16.3597 22.4865 16.4979 22.6126 16.677C22.7387 16.8561 22.808 17.0679 22.8117 17.2857C22.8117 17.292 22.8117 17.2979 22.8117 17.3042C22.8179 17.5899 22.7085 17.8663 22.5074 18.0727C22.3064 18.2791 22.0303 18.3985 21.7398 18.4047H21.7109"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4_2771">
+                                            <rect width="22.1497" height="18.5714" fill="white"
+                                                transform="translate(0.850098)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="footer-text">
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur. Facilisis turpis bibendum varius
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-3">
+                                <div>
+                                    <p class="semi-bold">
+                                        Courses
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Classroom courses</p>
+                                    <p>
+                                        Virtual classroom courses
+                                    </p>
+                                    <p>
+                                        E-learning courses
+                                    </p>
+                                    <p>
+                                        Video Courses
+                                    </p>
+                                    <p>
+                                        Offline Courses
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                                <div>
+                                    <p class="semi-bold">
+                                        Community
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Learners</p>
+                                    <p>
+                                        Parteners
+                                    </p>
+                                    <p>
+                                        Developers
+                                    </p>
+                                    <p>
+                                        Transactions
+                                    </p>
+                                    <p>
+                                        Blog
+                                    </p>
+                                    <p>
+                                        Teaching Center
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>
+                                    <p class="semi-bold">
+                                        Quick links
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Home</p>
+                                    <p>
+                                        Professional Education
+                                    </p>
+                                    <p>
+                                        Courses
+                                    </p>
+                                    <p>
+                                        Admissions
+                                    </p>
+                                    <p>
+                                        Testimonial
+                                    </p>
+                                    <p>
+                                        Programs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>
+                                    <p class="semi-bold">
+                                        More
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Press</p>
+                                    <p>
+                                        Investors
+                                    </p>
+                                    <p>
+                                        Terms
+                                    </p>
+                                    <p>
+                                        Privacy
+                                    </p>
+                                    <p>
+                                        Help
+                                    </p>
+                                    <p>
+                                        Contact
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright w-100 p-2">
+            <p class="text-center m-0">
+                ©2023 Copyright Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<!-- JS File -->
+<script src="./assests/javascript/script.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.custom_drop').click(function () {
+            $(this).next().slideToggle();
+        })
+    })
+</script>

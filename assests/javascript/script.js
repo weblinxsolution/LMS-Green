@@ -23,3 +23,7 @@ video.addEventListener("click", function () {
         playPauseButton.innerHTML = '<i class="ri-play-circle-fill"></i>'; // Change button to play icon
     }
 });
+
+
+
+
