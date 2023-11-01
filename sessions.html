@@ -305,8 +305,8 @@
                                         <p class="m-0 ps-4">Lesson</p>
                                     </div>
                                     <div class="ps-4" style="display: none;">
-                                        <a href="upcoming-lesson.html">
-                                            <p class="m-0 ps-4 mb-2 mt-4 cursor">Upcoming lession</p>
+                                        <a href="upcoming-lession.html">
+                                            <p class="m-0 ps-4 mb-2 mt-4 cursor">Available lession</p>
                                         </a>
                                         <a href="lesson-history.html">
                                             <p class="m-0 ps-4 cursor mt-4">Lession history</p>
@@ -315,7 +315,7 @@
                                     </div>
 
                                 </div>
-                                <a href="teacher-review.html">
+                                <!-- <a href="teacher-review.html">
                                     <div class="">
                                         <div class="d-flex align-items-center ps-4 cursor">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
@@ -334,7 +334,7 @@
                                             <p class="m-0 ps-3">Teachers</p>
                                         </div>
                                     </div>
-                                </a>
+                                </a> -->
                                 <a href="review.html">
                                     <div class="">
                                         <div class="d-flex align-items-center ps-4 cursor">
@@ -375,7 +375,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="orders.html">
+                                <a href="redeem-products.html">
                                     <div class="">
                                         <div class="d-flex align-items-center ps-4 cursor">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
@@ -415,7 +415,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="transaction.html">
+                                <a href="payslip.html">
                                     <div class="">
                                         <div class="d-flex align-items-center ps-4 cursor">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38"
@@ -435,7 +435,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="chat.html" class="cursor">
+                                <!-- <a href="chat.html" class="cursor">
                                     <div class="">
                                         <div class="d-flex align-items-center ps-4">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33"
@@ -447,7 +447,7 @@
                                             <p class="m-0 ps-4">Chat</p>
                                         </div>
                                     </div>
-                                </a>
+                                </a> -->
                             </div>
                             <a href="">
                                 <div class="bottom-menu-logout">
@@ -498,7 +498,9 @@
                                                     <th>Teacher Name</th>
                                                     <th>Course Name</th>
                                                     <th>Subject</th>
+                                                    <th>Status</th>
                                                     <th>Time</th>
+                                                    <th>Duration</th>
                                                     <th>Date</th>
                                                     <th>Action</th>
                                                 </tr>
@@ -512,21 +514,61 @@
                                                     <td>
                                                         Lead Generation
                                                     </td>
+                                                    <td class="">
+                                                        <div class="inprog">
+                                                            <span class="">
+                                                                In Progress
+                                                            </span>
+                                                        </div>
+                                                    </td>
                                                     <td>
                                                         7:26 pm
                                                     </td>
+                                                    <td>
+                                                        45 minutes
+                                                    </td>
 
                                                     <td>
-                                                        1/11/2023
+                                                        23-2-2023
                                                     </td>
 
                                                     <td class="review-btn d-flex gap-1">
-                                                        <button>
+                                                        <button class="red-btn">
                                                             End Session
                                                         </button>
-                                                        <button>
+                                                        <button class="green-btn" ype="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                             Review
                                                         </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>John</td>
+                                                    <td>
+                                                        Digital Marketnig
+                                                    </td>
+                                                    <td>
+                                                        Lead Generation
+                                                    </td>
+                                                    <td>
+                                                        <div class="comp">
+                                                            Complete
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        7:26 pm
+                                                    </td>
+                                                    <td>
+                                                        45 minutes
+                                                    </td>
+
+                                                    <td>
+                                                        23-2-2023
+                                                    </td>
+
+                                                    <td class="review-btn d-flex gap-1">
+                                                            <button class="green-btn" ype="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                Review
+                                                            </button>
                                                     </td>
                                                 </tr>
 
@@ -535,27 +577,30 @@
                                     </div>
                                 </div>
                                 <!-- Add Vocabulary Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content vocab">
                                             <div class="modal-header">
-                                                <p class="modal-title fs-4" id="exampleModalLabel">Add Vocabulary</p>
+                                                <p class="modal-title fs-4" id="exampleModalLabel">Review To Teacher</p>
 
                                             </div>
-                                            <div class="modal-body">
-                                                <div>
-                                                    <input type="text" placeholder="Enter Word" class="form-control"
-                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
-                                                </div>
+                                            <div class="modal-body ">
+                                                
+                                                    <div class="d-flex rating" style="color: #FFD700;">
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-half-fill"></i>
+                                                    </div>
+                                                
                                                 <div class="mt-4">
                                                     <textarea class="form-control" placeholder="Description" rows="5"
                                                         id="floatingTextarea"></textarea>
                                                 </div>
                                             </div>
                                             <div class="modal-footer Review-btn-green">
-                                                <button type="button" class="" data-bs-dismiss="modal">Add
-                                                    Vocabulary</button>
+                                                <button type="button" class="" data-bs-dismiss="modal">Submit</button>
 
                                             </div>
                                         </div>

@@ -1239,7 +1239,7 @@ input:focus-visible {
     background-color: #AAFF83;
     color: #000;
     overflow: hidden;
-    padding: 1rem 1rem;
+    padding: 8px;
 }
 .cursor{
     cursor: pointer;
@@ -1250,7 +1250,7 @@ input:focus-visible {
 }
 
 .last-section-bg .dashboard-table tr td {
-    padding: 1rem 2rem;
+    padding: 10px;
 }
 
 .last-section-bg .dashboard-table tr th:nth-child(1) {
@@ -1761,7 +1761,7 @@ video {
     border: none;
     border-radius: 10px;
 }
-.review-btn button:nth-child(1){
+.review-btn .red-btn{
     border: 1px solid rgb(255, 99, 99);
     background-color: rgb(255, 99, 99);
     color: #FFF;
@@ -1769,7 +1769,7 @@ video {
     font-weight: 500;
     border-radius: 5px;
 }
-.review-btn button:nth-child(2){
+.review-btn .green-btn{
     border: 1px solid #44D400;
     border-radius: 5px;
     background-color: #44D400;
@@ -1777,7 +1777,39 @@ video {
     padding: 5px 5px;
     font-weight: 500;
 }
-
+.red-bg{
+    background-color: red !important;
+}
+.inprog{
+    background-color: rgb(255, 195, 82);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comp{
+    background-color: #a4ff63;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 10px;
+}
+.red-bg-1{
+    background-color: rgb(255, 99, 99);
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.comp-1{
+    background-color: #a4ff63;
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.rating i{
+    font-size: 35px;
+}
 @media (max-width:1920px) {
     .fw-med {
         font-weight: 500;
