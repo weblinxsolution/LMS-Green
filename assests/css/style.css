@@ -713,7 +713,7 @@ input:focus-visible {
 }
 
 .lesson-bg {
-    background-image: url("../images/lesson-history-bg.png");
+    /* background-image: url("../images/lesson-history-bg.png"); */
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: left top;
