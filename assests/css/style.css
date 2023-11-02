@@ -894,7 +894,9 @@ input:focus-visible {
     font-size: 20px;
     color: #091C00;
 }
-
+.bottom-menu-logout{
+    margin-top: 2rem;
+}
 .bottom-menu-logout i {
     font-size: 28px;
     color: #091C00;
