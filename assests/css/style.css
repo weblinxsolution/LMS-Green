@@ -914,7 +914,7 @@ input:focus-visible {
     font-weight: 600;
 }
 
-.lefts-menus path {
+.lefts-menus i {
     stroke: #091C00;
 }
 
@@ -922,8 +922,8 @@ input:focus-visible {
     stroke: #091C00;
 }
 
-.lefts-menus .activator path {
-    stroke: #FFF;
+.lefts-menus .activator i {
+    color: #FFF;
 }
 
 .fw-regular {
@@ -2212,6 +2212,9 @@ video {
 }
 
 @media (max-width:420px) {
+    .nitro {
+        height: 60vh;
+    }
     .Review-btn-green button {
         border-radius: 10px;
         background: #44D400;

@@ -1,8 +1,11 @@
+$(document).ready(function () {
+    $('.custom_drop').click(function () {
+        $(this).next().slideToggle();
+    })
+});
+
 const video = document.getElementById("myVideo");
 const playPauseButton = document.getElementById("playPauseButton");
-
-
-
 
 playPauseButton.addEventListener("click", function () {
     if (video.paused) {
