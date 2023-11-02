@@ -2212,9 +2212,9 @@ video {
 }
 
 @media (max-width:420px) {
-    .nitro {
-        height: 80vh;
-    }
+    /* .nitro {
+        height: 100vh;
+    } */
     .Review-btn-green button {
         border-radius: 10px;
         background: #44D400;
