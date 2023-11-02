@@ -782,8 +782,10 @@
 <script src="./assests/javascript/script.js"></script>
 <script>
     $(document).ready(function () {
-        $('.custom_drop').click(function () {
-            $(this).next().slideToggle();
-        })
+    $('.custom_drop').click(function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        $(this).next().slideToggle();
     });
+});
 </script>
