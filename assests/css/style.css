@@ -876,27 +876,33 @@ input:focus-visible {
     top: 40px;
 }
 
+.fs-5 {
+    font-size: 1rem !important;
+}
+
 .nitro {
     height: 100vh;
 }
 
 .lefts-menus p {
-    font-size: 20px;
+    font-size: 16px;
     color: #091C00;
 }
 
 .lefts-menus i {
-    font-size: 28px;
+    font-size: 20px;
     color: #091C00;
 }
 
 .bottom-menu-logout p {
-    font-size: 20px;
+    font-size: 16px;
     color: #091C00;
 }
-.bottom-menu-logout{
+
+.bottom-menu-logout {
     margin-top: 2rem;
 }
+
 .bottom-menu-logout i {
     font-size: 28px;
     color: #091C00;
@@ -1242,18 +1248,23 @@ input:focus-visible {
     color: #000;
     overflow: hidden;
     padding: 8px;
+    font-size: 14px;
 }
-.cursor{
+
+.cursor {
     cursor: pointer;
 }
+
 .chat-box-divider img {
     width: 100%;
     height: 100%;
 }
 
 .last-section-bg .dashboard-table tr td {
+    font-size: 14px;
     padding: 10px;
 }
+
 
 .last-section-bg .dashboard-table tr th:nth-child(1) {
     border-radius: 10px 0px 0px 0px;
@@ -1756,14 +1767,16 @@ video {
 .light-dark-text {
     color: #46AA52;
 }
-.live-btn button{
+
+.live-btn button {
     background-color: #44D400;
     color: #FFF;
     padding: .5rem 1rem;
     border: none;
     border-radius: 10px;
 }
-.review-btn .red-btn{
+
+.review-btn .red-btn {
     border: 1px solid rgb(255, 99, 99);
     background-color: rgb(255, 99, 99);
     color: #FFF;
@@ -1771,7 +1784,8 @@ video {
     font-weight: 500;
     border-radius: 5px;
 }
-.review-btn .green-btn{
+
+.review-btn .green-btn {
     border: 1px solid #44D400;
     border-radius: 5px;
     background-color: #44D400;
@@ -1779,39 +1793,58 @@ video {
     padding: 5px 5px;
     font-weight: 500;
 }
-.red-bg{
+
+.red-bg {
     background-color: red !important;
 }
-.inprog{
+
+.inprog {
     background-color: rgb(255, 195, 82);
     border-radius: 5px;
     padding: 5px;
-    font-weight: 500;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.comp{
+
+.gap-15 i {
+    width: 40px;
+}
+
+.gap-14 {
+    gap: 15px;
+}
+
+.gap-14 svg {
+    width: 25px;
+}
+
+.comp {
     background-color: #a4ff63;
     border-radius: 5px;
-    font-weight: 500;
-    padding: 10px;
+    font-weight: 400;
+    padding: 5px;
 }
-.red-bg-1{
+
+.red-bg-1 {
     background-color: rgb(255, 99, 99);
     width: max-content;
     padding: 5px;
     border-radius: 5px;
 }
-.comp-1{
+
+.comp-1 {
     background-color: #a4ff63;
     width: max-content;
     padding: 5px;
     border-radius: 5px;
 }
-.rating i{
+
+.rating i {
     font-size: 35px;
 }
+
 @media (max-width:1920px) {
     .fw-med {
         font-weight: 500;
@@ -2214,6 +2247,7 @@ video {
 }
 
 @media (max-width:420px) {
+
     /* .nitro {
         height: 100vh;
     } */
@@ -2232,7 +2266,8 @@ video {
     .globle-btn button {
         font-size: 12px;
     }
-    .course-intro-bg{
+
+    .course-intro-bg {
         margin-top: 1rem;
     }
 }
